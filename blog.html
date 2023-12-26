@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Full stack PHP, Laravel &amp; Vuejs Developer - CV, Bangladesh</title>
+    <meta name="description" content="Full stack PHP developer with Laravel and Vuejs experience from Bangladesh. Information about my skills, projects, work and experience - Mohasin Hossain" />
+    <meta name="keywords" content="full stack developer, full stack laravel developer, laravel developer, laravel developer bangladesh, laravel bangladesh, php developer bangladesh, vuejs developer bangladesh, bangladeshi php developer, php developer dhaka, bangladeshi laravel developer"
+    />
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <script src="https://use.fontawesome.com/aafaa05d2b.js"></script>
+    <link rel="icon" href="images/mohasin-hossain-laravel-vuejs-developer-favicon.png">
+
+    <style>
+        body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      overflow-x: hidden;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    p {
+      color: #666;
+    }
+
+    a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    hr {
+      margin: 15px 0;
+      border: 0;
+      border-top: 1px solid #ddd;
+    }
+    </style>
+<head>
+
+<body>
+    <main>
+        <div class="navbar custom-navbar navbar-fixed-top top-nav-collapse" role="navigation">
+            <div class="container">
+
+                <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                        <span class="icon icon-bar"></span>
+                    </button>
+
+                    <a href="index.html" class="navbar-brand">
+                        <img style="margin-top: 12px;" src="images/mohasin-hossain-laravel-vuejs-developer-logo.png" alt="Mohasin Hossain - PHP Laravel Vuejs developer"></a>
+                </div>
+
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right articles">
+                        <li><a class="smoothScroll" href="index.html">Home</a>
+                        </li>
+                        <li><a class="smoothScroll" href="skills.html">Skills</a>
+                        </li>
+                        <li><a class="smoothScroll" href="experience.html">Experience</a>
+                        </li>
+                        <li><a class="smoothScroll" href="portfolio.html">Portfolio</a>
+                        </li>
+                        <li class="active"><a class="smoothScroll" href="blog.html">Blogs</a>
+                        <li><a class="smoothScroll" href="mentoring.html">Mentoring</a>
+                        </li>   
+                        <li><a class="smoothScroll" href="cv.html">Job / CV</a>
+                        </li>
+                        <li><a class="smoothScroll" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-lg-10 col-lg-offset-1">
+                <p class="alert alert-info text-center">
+                    I consistently contribute to <a href="https://medium.com" target="_blank"><strong>Medium</strong></a> by sharing insightful articles. Below, you'll find a selection of random blogs sourced from my Medium RSS feed.
+                    You can read more from here : <a href="https://medium.com/@mohasin-dev" target="_blank">https://medium.com/@mohasin-dev</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div id="medium-posts"></div>
+        </div>
+
+    </main>
+
+    <script>
+        // Shuffle function to randomly rearrange the array
+        function shuffleArray(array) {
+          for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+          }
+          return array;
+        }
+    
+        async function getMediumFeed() {
+          try {
+            const mediumRssFeed = "https://medium.com/feed/@mohasin-dev";
+            const rssToJsonApi = "https://api.rss2json.com/v1/api.json";
+            const response = await fetch(`${rssToJsonApi}?rss_url=${mediumRssFeed}`);
+            const data = await response.json();
+            return shuffleArray(data.items); // Shuffle the array of blog posts
+          } catch (error) {
+            console.error("Error fetching Medium feed:", error);
+            return [];
+          }
+        }
+    
+        async function displayMediumPosts() {
+          const mediumPosts = await getMediumFeed();
+          const mediumPostsContainer = document.getElementById("medium-posts");
+    
+          mediumPosts.forEach(post => {
+            const postElement = document.createElement("div");
+            postElement.classList.add("card", "mb-3");
+            postElement.innerHTML = `
+              <div class="card-body">
+                <h2 class="card-title">${post.title}</h2>
+                <p class="card-text">${post.description}</p>
+                <a href="${post.link}" target="_blank" class="btn btn-primary">Read more</a>
+              </div>
+              <div class="card-footer text-muted">
+                <hr>
+              </div>
+            `;
+            mediumPostsContainer.appendChild(postElement);
+          });
+        }
+    
+        // Call the function to display Medium posts
+        displayMediumPosts();
+      </script>
+    
+
+    <footer id="footer" style="width: 100%; text-align: center; box-shadow: 1px -1px 3px rgba(80, 80, 80, .1); margin-top: 20px;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="social-links text-center">
+
+                        <span class="fantasy-social-links"><a href="https://github.com/mohasin-dev"
+                            rel="" target="_blank"><i class='fa
+            fa-github'></i></a></span>
+
+                        <span class="fantasy-social-links"><a href="https://linkedin.com/in/mohasin-dev"
+                rel="" target="_blank"><i class="fa fa-linkedin"></i></a></span>
+                        <span class="fantasy-social-links"><a href="https://mohasin-dev.medium.com"
+                            rel="" target="_blank"><i class='fa fa-medium'></i></a></span>
+                        <span class="fantasy-social-links"><a href="https://stackoverflow.com/users/11620575/mohasin-hossain?tab=profile"
+                            rel="" target="_blank"><i class='fa
+            fa-stack-overflow'></i></a></span>
+                        <span class="fantasy-social-links"><a href="https://twitter.com/mohasindev"
+                            rel="" target="_blank"><i
+        class='fa fa-twitter'></i></a></span>
+
+                        <div class="copyright">All rights reserved &copy; 2018-2023 | Mohasin Hossain - Full-stack PHP, Laravel, Vue.js Developer</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+    <div id="scroll-top">
+        <i class="fa fa-angle-up fa-2x"></i>
+    </div>
+
+    <script src="js/main.js"></script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6XJN0HSGV0"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-6XJN0HSGV0');
+    </script>
+</body>
+</html>
