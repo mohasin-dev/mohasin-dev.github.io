@@ -21,7 +21,83 @@
     <script src="https://use.fontawesome.com/aafaa05d2b.js"></script>
     <link rel="icon" href="images/mohasin-hossain-laravel-vuejs-developer-favicon.png">
 
-    <head>
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <style>
+        /* Testimonials Section */
+        .testimonial-section {
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        .testimonial-section h2 {
+            font-size: 28px;
+            color: #7002db;
+            margin-bottom: 20px;
+        }
+
+        .swiper {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .swiper-slide {
+            background: #f1f1f1;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .swiper-slide p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .swiper-slide h4 {
+            margin-top: 10px;
+            color: #7002db;
+        }
+
+        .swiper-slide span {
+            font-size: 14px;
+            color: #666;
+        }
+
+        /* Clients Section */
+        .client-section {
+            padding: 50px 20px;
+            background: #fff;
+        }
+
+        .client-section h2 {
+            font-size: 28px;
+            color: #7002db;
+            margin-bottom: 20px;
+        }
+
+        .client-logos {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+        }
+
+        .client-logos img {
+            max-width: 120px;
+            height: 40px !important;
+            filter: grayscale(100%);
+            transition: 0.3s ease-in-out;
+        }
+
+        .client-logos img:hover {
+            filter: grayscale(0%);
+            transform: scale(1.1);
+        }
+    </style>
+</head>
 
         <body class="home">
             <main>
@@ -77,7 +153,7 @@
                                             <li>I'm <strong>Vue.js & Nuxt.js Developer.</strong></li>
                                             <li>I'm <strong>Team Lead, Educator & Writer.</strong></li>
                                             <li>Tech stack <strong> LAMP (Linux, Apache, MySQL, PHP) & LEMP (Linux, Nginx, MySQL, PHP).</strong></li>
-                                            <li>Working since <strong> 2018 (5+ Years).</strong></li>
+                                            <li>Working since <strong> 2018 (6+ Years).</strong></li>
                                             <li>Experienced In <strong> <label>PHP</label> | <label>Laravel</label> | <label>OOP</label> | <label>SOLID</label> | <label>Lumen</label> | <label>MySQL</label> | <label>NodeJS</label> | <label>Vue.js</label> | <label>Nuxt.js</label> | <label>AWS</label> | <label>Git</label> | <label>Docker</label> | <label>MVC</label> | <label>TDD</label> | <label>CI/CD</label></strong></li>
                                             <li>Certifications <strong> Full Stack Web Development | Amazon Web Services (AWS).</strong></li>
                                         </ul>
@@ -124,7 +200,7 @@
                                 <div class="col-md-7">
                                     <div class="person-info">
                                         <div class="person-intro">
-                                            <h3>PHP Laravel Vue.js & Nuxt.js developer</h3>
+                                            <h3 style="color: #5701ab;">PHP Laravel Vue.js & Nuxt.js developer</h3>
                                             <p class="text-info">
                                                 I am motivated <strong>Full stack developer</strong> specialized in <strong>PHP, Laravel, Vue.js & Nuxt.js</strong>. I have experience in building scaling application & services in various domains. I also
                                                 have experience in managing teams of developers, analyzing other developers code (Code review) and helping other developers in solving issues. I am passionate about problem-solving & collaborate techniques
@@ -161,6 +237,7 @@
 
                     </div>
                 </section>
+
                 <style>
                     body {
                         font-family: Arial, sans-serif;
@@ -209,6 +286,23 @@
                     </div>
                 </section>
 
+                <section class="client-section">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <h2 class="h1">Our Trusted Clients</h2><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="client-logos">
+                        <img src="images/clients/oneblink.png" alt="Client 1">
+                        <img src="images/clients/funnerliner.png" alt="Client 2">
+                        <img src="images/clients/parceldex.png" alt="Client 3">
+                        <img src="images/clients/cosmeticsparlour.png" alt="Client 4">
+                        <!-- <img src="client5.png" alt="Client 5"> -->
+                    </div>
+                </section>
+
                 <section id="statistic" class="text-center">
                     <div class="container">
                         <div class="row">
@@ -243,6 +337,7 @@
                         </div>
                     </div>
                 </section>
+                
                 <section id="skills" class="add-padding border-bottom-color2">
 
                     <div class="container">
@@ -301,6 +396,40 @@
                         }
                     </style>
                 </section>
+
+                <section class="testimonial-section">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="section-title text-center">
+                                <h2 class="h1">What Our Clients Say</h2><br>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper testimonial-slider">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p>“Mohasin is the most skilled freelancer we've worked with—highly professional and detail-oriented!”</p>
+                                <h4>Jay Syzdek</h4>
+                                <span>CEO, One Blink Tech</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p>“Great experience working with Mohasin. Highly recommend his services.”</p>
+                                <h4>François Forest</h4>
+                                <span>CEO, Feedier</span>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <p>“Exceptional development skills and a pleasure to work with!”</p>
+                                <h4>Gahidul Islam</h4>
+                                <span>Deputy Manager, Parceldex</span>
+                            </div>
+                        </div>
+                        <!-- Pagination & Navigation -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </section>
+
                 <section id="portfolio">
                     <div class="container">
 
@@ -892,11 +1021,42 @@ Software architecture design, Data modeling, Database design
            
 
 
-            <div id="scroll-top">
+            <!-- <div id="scroll-top">
                 <i class="fa fa-angle-up fa-2x"></i>
-            </div>
+            </div> -->
         </body>
         <script src="js/main.js"></script>
+        <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper('.testimonial-slider', {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
+            }
+        });
+    </script>
+
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/5cc15cabd6e05b735b443349/default';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+
         <script>
             // select the target node
             var target = document.getElementById('mce-success-response');
@@ -931,5 +1091,5 @@ Software architecture design, Data modeling, Database design
             gtag('config', 'G-6XJN0HSGV0');
         </script>
 
-        <script>!function(){var e,t,n,a;window.MyAliceWebChat||((t=document.createElement("div")).id="myAliceWebChat",(n=document.createElement("script")).type="text/javascript",n.async=!0,n.src="https://widget.myalice.ai/index.js",(a=(e=document.body.getElementsByTagName("script"))[e.length-1]).parentNode.insertBefore(n,a),a.parentNode.insertBefore(t,a),n.addEventListener("load",(function(){MyAliceWebChat.init({selector:"myAliceWebChat",number:"8801820937110",message:"",color:"#25D366",channel:"wa",boxShadow:"none",text:"Message Us",theme:"light",position:"right",mb:"60px",mx:"20px",radius:"20px"})})))}();</script>
+        <script>!function(){var e,t,n,a;window.MyAliceWebChat||((t=document.createElement("div")).id="myAliceWebChat",(n=document.createElement("script")).type="text/javascript",n.async=!0,n.src="https://widget.myalice.ai/index.js",(a=(e=document.body.getElementsByTagName("script"))[e.length-1]).parentNode.insertBefore(n,a),a.parentNode.insertBefore(t,a),n.addEventListener("load",(function(){MyAliceWebChat.init({selector:"myAliceWebChat",number:"8801820937110",message:"",color:"#25D366",channel:"wa",boxShadow:"none",text:"Message Us",theme:"light",position:"left",mb:"18px",mx:"20px",radius:"20px"})})))}();</script>
 </html>
