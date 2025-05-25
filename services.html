@@ -220,7 +220,12 @@
                             <div id="formMessage" style="margin-top: 10px; display: none;"></div>
 
                             <h2>Request a Service</h2>
-                            <form id="serviceRequestForm">
+                           <form id="serviceRequestForm"
+                                action="#"
+                                method="POST"
+                                target="hidden_iframe"
+                                onsubmit="handleSubmit()">
+
                                 <input type="text" name="name" placeholder="Your Name" required>
                                 <input type="email" name="email" placeholder="Your Email" required>
                                 <input type="tel" name="phone" placeholder="Your Phone Number">
@@ -243,6 +248,9 @@
                                 
                                 <button type="submit">Submit Request</button>
                             </form>
+
+                            <iframe name="hidden_iframe" style="display:none;" onload="submissionComplete()"></iframe>
+
 
                         </section>
 
@@ -293,37 +301,23 @@
         <script src="js/main.js"></script>
 
         <script>
-            const form = document.getElementById('serviceRequestForm');
-            const messageDiv = document.getElementById('formMessage');
+            let submitted = false;
 
-            form.addEventListener('submit', async function (e) {
-                e.preventDefault();
+            function handleSubmit() {
+                submitted = true;
+                document.getElementById("formMessage").style.display = "block";
+                document.getElementById("formMessage").style.color = "blue";
+                document.getElementById("formMessage").innerText = "⏳ Submitting your request...";
+            }
 
-                const formData = new FormData(form);
-
-                try {
-                    const response = await fetch("https://script.google.com/macros/s/AKfycbzb0tvk-8LQEa-0xf0wrLfMuQIrbkPfoWs80Xy38PLcI0ISsSlLioZGTMeADKuX0ciN/exec", {
-                        method: "POST",
-                        body: new URLSearchParams(formData),
-                    });
-
-                    const result = await response.json();
-
-                    if (result.status === "success") {
-                        messageDiv.style.color = "green";
-                        messageDiv.innerText = "✅ Your request has been submitted successfully! We'll get back to you shortly.";
-                        form.reset();
-                    } else {
-                        throw new Error("Submission failed");
-                    }
-                } catch (err) {
-                    console.log(err);
-                    messageDiv.style.color = "red";
-                    messageDiv.innerText = "❌ Something went wrong. Please try again later.";
+            function submissionComplete() {
+                if (submitted) {
+                    document.getElementById("formMessage").style.color = "green";
+                    document.getElementById("formMessage").innerText = "✅ Your request has been submitted successfully! We'll be in touch soon.";
+                    document.getElementById("serviceRequestForm").reset();
+                    submitted = false;
                 }
-
-                messageDiv.style.display = "block";
-            });
+            }
         </script>
 
 
