@@ -1,4 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:400,700|Quicksand:400,700);
+
+:root{
+    --primary: #cb8bcf;
+    --secondary: #825ef5;
+    --third: #1ea0e8;
+}
+
+.gradient-text-accent {
+    background-image: linear-gradient(-40deg, var(--primary), var(--secondary), var(--third)) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+}
+
+.gradient-bg{
+    background: linear-gradient(-40deg, var(--primary), var(--secondary), var(--third)) !important;
+}
+
+.gradient-bg:hover{
+    color: #fff !important;
+}
+
 body.compensate-for-scrollbar {
     overflow: hidden
 }
