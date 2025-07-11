@@ -21,6 +21,9 @@
     <link href="css/main.css" rel="stylesheet" type="text/css">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <script src="https://use.fontawesome.com/aafaa05d2b.js"></script>
+    <!-- ✅ Updated Font Awesome (v5.15.4) CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
     <link rel="icon" href="images/mohasin-hossain-laravel-vuejs-developer-favicon.png">
 
     <!-- Swiper CSS -->
@@ -203,30 +206,6 @@
                         </div>
                     </div>
                     <div class="container">
-                        <div class="header-inner">
-                            <div class="header-content text-center">
-                                <h1 class="home-title gradient-text-accent">Hello. I'm <span>Mohasin Hossain</span></h1>
-                                <h4 id="typewrite">&nbsp; <span></span></h4>
-                                <ul id="typewrite-elements">
-                                    <li>I'm <strong>Full Stack Developer.</strong></li>
-                                    <li>I'm <strong>PHP Developer.</strong></li>
-                                    <li>I'm <strong>Laravel Expart.</strong></li>
-                                    <li>I'm <strong>Vue.js & Nuxt.js Developer.</strong></li>
-                                    <li>I'm <strong>Team Lead, Educator & Writer.</strong></li>
-                                    <li>Tech stack <strong> LAMP (Linux, Apache, MySQL, PHP) & LEMP (Linux, Nginx,
-                                            MySQL, PHP).</strong></li>
-                                    <li>Working since <strong> 2018 (6+ Years).</strong></li>
-                                    <li>Experienced In <strong> <label>PHP</label> | <label>Laravel</label> |
-                                            <label>OOP</label> | <label>SOLID</label> | <label>Lumen</label> |
-                                            <label>MySQL</label> | <label>NodeJS</label> | <label>Vue.js</label> |
-                                            <label>Nuxt.js</label> | <label>AWS</label> | <label>Git</label> |
-                                            <label>Docker</label> | <label>MVC</label> | <label>TDD</label> |
-                                            <label>CI/CD</label></strong></li>
-                                    <li>Certifications <strong> Full Stack Web Development | Amazon Web Services
-                                            (AWS).</strong></li>
-                                </ul>
-                            </div>
-                        </div>
                         <div class="but-down text-center">
                             <a href="#about"><i class="fa fa-angle-down"></i></a>
                         </div>
@@ -235,155 +214,199 @@
             </div>
         </header>
 
-        <section id="about">
+        <section class="paren-hero">
             <div class="container">
-                <div class="about-content">
-                    <div class="row">
-                        <div class="col-md-5">
-                            <div class="person-img">
-                                <img loading="lazy" src="images/mohasin-hossain-laravel-vuejs-developer.jpeg"
-                                    alt="Mohasin Hossain" class="img-responsive">
-                            </div>
-                            <div class="social-links text-center">
+                <div class="row align-items-center justify-content-between">
+                    <!-- Left Content -->
+                    <div class="col-lg-7">
+                        <div class="paren-hello">👋 Hey folks</div>
+                        <h1 class="paren-title">I'm <span class="paren-highlight">Mohasin Hossain</span></h1>
+                        <div class="paren-subtitle mb-3">Software Developer, Author, Mentor</div>
 
-
-                                <span class="fantasy-social-links"><a href="https://linkedin.com/in/mohasin-dev" rel=""
-                                        target="_blank" class="gradient-bg"><i class='fa fa-linkedin'></i></a></span>
-
-                                <span class="fantasy-social-links"><a href="https://github.com/mohasin-dev" rel=""
-                                        target="_blank" class="gradient-bg"><i class='fa
-                    fa-github'></i></a></span>
-
-                                <span class="fantasy-social-links"><a href="https://mohasin-dev.medium.com" rel=""
-                                        target="_blank" class="gradient-bg"><i class='fa fa-medium'></i></a></span>
-
-                                <span class="fantasy-social-links"><a
-                                        href="https://stackoverflow.com/users/11620575/mohasin-hossain?tab=profile"
-                                        rel="" target="_blank" class="gradient-bg"><i class='fa
-                    fa-stack-overflow'></i></a></span>
-
-                                <span class="fantasy-social-links"><a href="https://twitter.com/mohasindev" rel=""
-                                        target="_blank" class="gradient-bg"><i class='fa fa-twitter'></i></a></span>
-                            </div>
+                        <!-- Social Icons -->
+                        <div class="paren-icons mb-3">
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-github"></i></a>
                         </div>
 
-                        <div class="col-md-7">
-                            <div class="person-info">
-                                <div class="person-intro">
-                                    <h3 class="gradient-text-accent">About Me</h3>
-                                    <p class="text-info">
-                                        I’m a backend-focused Full Stack Developer with 6 years of experience,
-                                        specializing in <strong> PHP, Laravel, Vue.js, and Nuxt.js</strong>. I’ve built
-                                        and scaled applications across various domains, with a strong focus on <strong>
-                                            performance, clean architecture, and cloud infrastructure (VPS &
-                                            AWS)</strong>.</p>
+                        <!-- Description -->
+                        <p class="paren-description">
+                            Software craftsman with over 7 years in the industry, specializing in PHP and Laravel.<br>
+                            Contributed to <span class="text-info">Laravel</span> and several other Open source
+                            projects.<br>
+                            Built a <span class="text-info">learning platform</span>, empowering more than 1500
+                            developers.
+                        </p>
 
-                                    <p class="text-info">
+                        <p class="paren-subscribe-text">
+                            Get my curated knowledge in Thoughtful Dev’s Newsletter.<br>
+                            If you don’t want to miss out, subscribe here 👇
+                        </p>
 
-                                        I’ve worked remotely with international teams and have deep experience
-                                        optimizing API performance, database queries, and system workflows. I regularly
-                                        conduct <strong>code reviews</strong>, mentor junior developers, and enjoy
-                                        solving complex backend challenges that drive scalable products.</p>
+                        <!-- Subscribe Form -->
+                        <!-- <form class="paren-form">
+                            <input type="email" placeholder="✉️ Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form> -->
+                    </div>
 
-                                    <p class="text-info">
-                                        I’m also a <strong>mentor at ADPList</strong>, where I guide aspiring
-                                        developers, and a <strong> technical blogger on Medium</strong>, sharing
-                                        insights from real-world projects and best practices in Laravel, Vue.js, and
-                                        system design.
-                                    </p>
+                    <!-- Right Image -->
+                    <div class="col-lg-5 text-center mt-5 mt-lg-0">
+                        <div class="paren-img-wrapper">
+                            <img src="images/mohasin-hossain-laravel-vuejs-developer.jpeg" alt="Ahmed Shamim" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="paren-about-wrapper">
+            <div class="container">
+                <div class="paren-card-box">
+                    <div class="paren-image-side">
+                        <div>
+                            <img src="images/mohasin-hossain-laravel-vuejs-developer.jpeg" alt="Mohasin Hossain">
+                            <div class="social-links text-center" style="margin-top: 24px;">
+                                <span class="fantasy-social-links">
+                                    <a href="https://linkedin.com/in/mohasin-dev" target="_blank" class="gradient-bg">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </span>
+
+                                <span class="fantasy-social-links">
+                                    <a href="https://github.com/mohasin-dev" target="_blank" class="gradient-bg">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </span>
+
+                                <span class="fantasy-social-links">
+                                    <a href="https://mohasin-dev.medium.com" target="_blank" class="gradient-bg">
+                                        <i class="fab fa-medium"></i>
+                                    </a>
+                                </span>
+
+                                <span class="fantasy-social-links">
+                                    <a href="https://stackoverflow.com/users/11620575/mohasin-hossain?tab=profile"
+                                        target="_blank" class="gradient-bg">
+                                        <i class="fab fa-stack-overflow"></i>
+                                    </a>
+                                </span>
+
+                                <span class="fantasy-social-links">
+                                    <a href="https://twitter.com/mohasindev" target="_blank" class="gradient-bg">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="paren-content-side">
+                        <h2 class="paren-title">Hi, I'm Mohasin Hossain</h2>
+                        <p>I’m a backend-focused Full Stack Developer with 6 years of experience, specializing in
+                            <strong>PHP, Laravel, Vue.js, and Nuxt.js</strong>. I’ve built and scaled applications
+                            across various domains with a strong focus on <strong>performance, clean architecture, and
+                                cloud infrastructure (VPS & AWS)</strong>.
+                        </p>
+
+                        <p>I’ve worked remotely with international teams and have deep experience optimizing API
+                            performance, database queries, and system workflows. I regularly conduct <strong>code
+                                reviews</strong>, mentor junior developers, and enjoy solving complex backend challenges
+                            that drive scalable products.</p>
+
+                        <p>I’m also a <strong>mentor at ADPList</strong>, and a <strong>technical blogger on
+                                Medium</strong>, sharing real-world project insights and best practices in Laravel,
+                            Vue.js, and system design.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parent-tech-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="h1 gradient-text-accent text-center">Technologies I Work With</h2>
+                </div>
+                <p>Crafting Solutions with Proven, Industry-Standard Tools</p>
+                <div class="parent-tech-icons">
+                    <div class="icon"><i class="fab fa-html5"></i></div>
+                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="icon"><i class="fab fa-js"></i></div>
+                    <div class="icon"><i class="fab fa-php"></i></div>
+                    <div class="icon"><i class="fab fa-laravel"></i></div>
+                    <div class="icon"><i class="fab fa-vuejs"></i></div>
+                    <div class="icon"><i class="fab fa-react"></i></div>
+                    <div class="icon"><i class="fab fa-git-alt"></i></div>
+                    <div class="icon"><i class="fab fa-github"></i></div>
+                    <div class="icon"><i class="fab fa-aws"></i></div>
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <div class="icon"><i class="fas fa-mobile-alt"></i></div>
+                    <div class="icon"><i class="fas fa-cloud"></i></div>
+                    <div class="icon"><i class="fab fa-docker"></i></div>
+                    <div class="icon"><i class="fab fa-npm"></i></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="parent-services-section">
+            <div class="container">
+                <div class="section-title">
+                    <h2 class="h1 gradient-text-accent text-center">Services Designed for Your Business Needs</h2>
+                </div>
+                <p class="text-center mb-4">Custom Software Development, Web Design, and Technical Solutions</p>
+
+                <div class="parent-tab-wrapper">
+                    <div class="parent-tab-list">
+                        <button class="active" onclick="showTab('software')">Software Development</button>
+                        <button onclick="showTab('consulting')">Consulting & Management</button>
+                        <button onclick="showTab('optimization')">Optimization & Quality</button>
+                        <button onclick="showTab('database')">Database</button>
+                    </div>
+                    <div class="parent-tab-content">
+                        <div id="software" class="parent-tab-pane active">
+                            <div class="parent-service-cards">
+                                <div class="parent-service-card"><i class="fas fa-tasks"></i> Project Management</div>
+                                <div class="parent-service-card"><i class="fas fa-code-branch"></i> Greenfield
+                                    Development</div>
+                                <div class="parent-service-card"><i class="fas fa-laptop-code"></i> Frontend Development
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-md-12 col-sm-6 text-center">
-                                        <p class="text-info">My portfolio reflects my commitment to quality,
-                                            performance, and thoughtful engineering.</p>
-                                        <div class="center-block" style="margin-top: 50px;">
-                                            <a href="https://php.net" rel="external" target="_blank"><img loading="lazy"
-                                                    src="images/php.png" class="zce"
-                                                    alt="Mohasin Hossain - PHP Developer" /></a>
-                                            <a href="https://laravel.com" rel="" target="_blank"><img loading="lazy"
-                                                    src="images/laravel.png" class="laravel-certified"
-                                                    alt="Mohasin Hossain - Laravel Developer" /></a>
-                                            <a href="https://Vue.js.org" rel="" target="_blank"><img loading="lazy"
-                                                    src="images/vuejs.png" class="laravel-certified"
-                                                    alt="Mohasin Hossain - Vue.js Developer" /></a>
-                                            <a href="https://nuxtjs.org" rel="" target="_blank"><img loading="lazy"
-                                                    src="images/NuxtJS_Logo.png" class="laravel-certified"
-                                                    alt="Mohasin Hossain - nuxt js Developer" /></a>
-                                            <a href="https://react.dev" rel="" target="_blank"><img loading="lazy"
-                                                    src="images/react.png" class="laravel-certified"
-                                                    alt="Mohasin Hossain - react Developer" /></a>
-                                            <a href="https://aws.amazon.com/" rel="external" target="_blank"><img
-                                                    loading="lazy" src="images/Amazon_Web_Services-Logo.png" class="zce"
-                                                    alt="Mohasin Hossain - AWS expert" /></a>
-                                            <a href="https://www.mysql.com" rel="external" target="_blank"><img
-                                                    loading="lazy" src="images/Mysql_logo.png" class="zce"
-                                                    alt="Mohasin Hossain - PHP mysql Developer" /></a>
-                                        </div>
-                                    </div>
-                                    <!-- <div class="col-md-12 col-sm-6 text-center">
-                                                <p class="text-info">
-                                                    For a few years I also help other developers, mainly in <strong>PHP and Laravel</strong> sections in international developers forum <strong>StackOverflow</strong> </p>
-                                                <a href="https://stackoverflow.com/users/11620575/mohasin-hossain?tab=profile" rel="" target="_blank"><img loading="lazy" src="images/stackoverflow.png" class="img-responsive
-                                    center-block" alt="Mohasin Hossain StackOverflow profile" /></a>
-                                            </div> -->
+                                <div class="parent-service-card"><i class="fas fa-server"></i> Backend Development</div>
+                                <div class="parent-service-card"><i class="fas fa-plug"></i> APIs Integrations</div>
+                            </div>
+                        </div>
+                        <div id="consulting" class="parent-tab-pane">
+                            <div class="parent-service-cards">
+                                <div class="parent-service-card"><i class="fas fa-user-tie"></i> Strategic IT Consulting
                                 </div>
-                                <div class="butt-contact" style="margin-top: 80px;">
-                                    <a href="contact.html" class="gradient-bg">Contact me</a>
+                                <div class="parent-service-card"><i class="fas fa-project-diagram"></i> Project
+                                    Leadership</div>
+                                <div class="parent-service-card"><i class="fas fa-lightbulb"></i> Product Planning</div>
+                            </div>
+                        </div>
+                        <div id="optimization" class="parent-tab-pane">
+                            <div class="parent-service-cards">
+                                <div class="parent-service-card"><i class="fas fa-tachometer-alt"></i> Performance
+                                    Tuning</div>
+                                <div class="parent-service-card"><i class="fas fa-code"></i> Code Refactoring</div>
+                                <div class="parent-service-card"><i class="fas fa-magic"></i> UX Improvements</div>
+                            </div>
+                        </div>
+                        <div id="database" class="parent-tab-pane">
+                            <div class="parent-service-cards">
+                                <div class="parent-service-card"><i class="fas fa-sitemap"></i> Database Architecture
                                 </div>
-
+                                <div class="parent-service-card"><i class="fas fa-search"></i> Query Optimization</div>
+                                <div class="parent-service-card"><i class="fas fa-exchange-alt"></i> Data Migration
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f9f9f9;
-            }
-
-            .service-banner {
-                background: #7002db;
-                color: white;
-                padding: 40px 20px;
-                text-align: center;
-                margin-top: 40px;
-                border-radius: 8px;
-            }
-
-            .service-banner h2 {
-                font-weight: bold;
-                margin: 0 0 20px;
-                font-size: 4rem;
-            }
-
-            .service-banner p {
-                margin: 0 0 20px;
-                font-size: 2.2rem;
-            }
-
-            .service-banner a {
-                font-size: 1.8rem;
-                display: inline-block;
-                padding: 10px 20px;
-                background-color: white;
-                color: #7002db;
-                text-decoration: none;
-                font-weight: bold;
-                border-radius: 5px;
-                transition: background 0.3s;
-            }
-
-            .service-banner a:hover {
-                background-color: #f3f3f3;
-            }
-        </style>
         <section>
             <div class="service-banner gradient-bg">
                 <h2>Transform Your Ideas into Reality</h2>
@@ -1362,40 +1385,49 @@
         <div class="color-options" id="colorOptions">
             <span class="" style="margin-left: 8px;">Primary</span>
             <div class="row">
-        <div class="col-4">
-          <div class="color-box" data-variable="--primary" data-color="#3498db" style="background-color: #3498db;"></div>
-        </div>
-        <div class="col-4">
-          <div class="color-box" data-variable="--primary" data-color="#e67e22" style="background-color: #e67e22;"></div>
-        </div>
-        <div class="col-4">
-          <div class="color-box" data-variable="--primary" data-color="#27ae60" style="background-color: #27ae60;"></div>
-        </div>
-      </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--primary" data-color="#3498db"
+                        style="background-color: #3498db;"></div>
+                </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--primary" data-color="#e67e22"
+                        style="background-color: #e67e22;"></div>
+                </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--primary" data-color="#27ae60"
+                        style="background-color: #27ae60;"></div>
+                </div>
+            </div>
             <span class="" style="margin-left: 8px;">Secondary</span>
             <div class="row">
-        <div class="col-4">
-          <div class="color-box" data-variable="--secondary" data-color="#3498db" style="background-color: #3498db;"></div>
-        </div>
-        <div class="col-4">
-          <div class="color-box" data-variable="--secondary" data-color="#e67e22" style="background-color: #e67e22;"></div>
-        </div>
-        <div class="col-4">
-          <div class="color-box" data-variable="--secondary" data-color="#27ae60" style="background-color: #27ae60;"></div>
-        </div>
-      </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--secondary" data-color="#3498db"
+                        style="background-color: #3498db;"></div>
+                </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--secondary" data-color="#e67e22"
+                        style="background-color: #e67e22;"></div>
+                </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--secondary" data-color="#27ae60"
+                        style="background-color: #27ae60;"></div>
+                </div>
+            </div>
             <span class="" style="margin-left: 8px;">Third</span>
             <div class="row">
-        <div class="col-4">
-          <div class="color-box" data-variable="--third" data-color="#3498db" style="background-color: #3498db;"></div>
-        </div>
-        <div class="col-4">
-          <div class="color-box" data-variable="--third" data-color="#e67e22" style="background-color: #e67e22;"></div>
-        </div>
-        <div class="col-4">
-          <div class="color-box" data-variable="--third" data-color="#27ae60" style="background-color: #27ae60;"></div>
-        </div>
-      </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--third" data-color="#3498db"
+                        style="background-color: #3498db;"></div>
+                </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--third" data-color="#e67e22"
+                        style="background-color: #e67e22;"></div>
+                </div>
+                <div class="col-4">
+                    <div class="color-box" data-variable="--third" data-color="#27ae60"
+                        style="background-color: #27ae60;"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -1428,15 +1460,15 @@
     const colorBoxes = document.querySelectorAll('.color-box');
 
     toggleBtn.addEventListener('click', () => {
-      switcher.classList.toggle('active');
+        switcher.classList.toggle('active');
     });
 
     colorBoxes.forEach(box => {
-      box.addEventListener('click', () => {
-        const cssVar = box.getAttribute('data-variable');
-        const color = box.getAttribute('data-color');
-        document.documentElement.style.setProperty(cssVar, color);
-      });
+        box.addEventListener('click', () => {
+            const cssVar = box.getAttribute('data-variable');
+            const color = box.getAttribute('data-color');
+            document.documentElement.style.setProperty(cssVar, color);
+        });
     });
 </script>
 
