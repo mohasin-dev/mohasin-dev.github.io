@@ -13686,4 +13686,12 @@
             (t.exports = u),
             (t.exports.default = u);
     },
+    
 });
+
+function showTab(id) {
+    document.querySelectorAll('.parent-tab-list button').forEach(btn => btn.classList.remove('active'));
+    document.querySelectorAll('.parent-tab-pane').forEach(pane => pane.classList.remove('active'));
+    document.querySelector(`[onclick="showTab('${id}')"]`).classList.add('active');
+    document.getElementById(id).classList.add('active');
+}
