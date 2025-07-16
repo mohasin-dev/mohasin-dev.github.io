@@ -30,135 +30,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <style>
-        /* Testimonials Section */
-        .testimonial-section {
-            padding: 50px 20px;
-            background: #fff;
-        }
-
-        .testimonial-section h2 {
-            font-size: 28px;
-            color: #7002db;
-            margin-bottom: 20px;
-        }
-
-        .swiper {
-            width: 100%;
-            max-width: 800px;
-            margin: auto;
-        }
-
-        .swiper-slide {
-            background: #f1f1f1;
-            padding: 30px;
-            border-radius: 10px;
-            text-align: center;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .swiper-slide p {
-            font-size: 16px;
-            color: #333;
-        }
-
-        .swiper-slide h4 {
-            margin-top: 10px;
-            color: #7002db;
-        }
-
-        .swiper-slide span {
-            font-size: 14px;
-            color: #666;
-        }
-
-        /* Clients Section */
-        .client-section {
-            padding: 50px 20px;
-            background: #fff;
-        }
-
-        .client-section h2 {
-            font-size: 28px;
-            color: #7002db;
-            margin-bottom: 20px;
-        }
-
-        .client-logos {
-            display: flex;
-            justify-content: center;
-            gap: 80px;
-            flex-wrap: wrap;
-        }
-
-        .client-logos img {
-            max-width: 120px;
-            height: 40px !important;
-            filter: grayscale(100%);
-            transition: 0.3s ease-in-out;
-        }
-
-        .client-logos img:hover {
-            filter: grayscale(0%);
-            transform: scale(1.1);
-        }
-
-
-        /* Floating Button */
-        .color-switcher {
-            position: fixed;
-            top: 50%;
-            right: 0;
-            transform: translateY(-50%);
-            background: #fff;
-            padding: 10px;
-            border-radius: 10px 0 0 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-            z-index: 1000;
-            transition: all 0.3s ease;
-        }
-
-        .color-toggle-btn {
-            background: none;
-            border: none;
-            font-size: 22px;
-            cursor: pointer;
-            color: #333;
-        }
-
-        .color-options {
-            margin-top: 10px;
-            display: none;
-            gap: 10px;
-        }
-
-        .color-box {
-            width: 40px;
-            height: 40px;
-            border-radius: 8px;
-            cursor: pointer;
-            border: 2px solid #ccc;
-            transition: transform 0.2s ease;
-        }
-
-        .color-box:hover {
-            transform: scale(1.1);
-            border-color: #999;
-        }
-
-        .color-switcher.active .color-options {
-            display: block;
-            width: 150px;
-        }
-
-        .color-switcher.active .color-options .row {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .color-switcher.active .color-options .col-4 {
-            width: 25%;
-        }
+        
     </style>
 </head>
 
@@ -261,7 +133,7 @@
             </div>
         </section>
 
-        <section class="paren-about-wrapper">
+        <!-- <section class="paren-about-wrapper">
             <div class="container">
                 <div class="paren-card-box">
                     <div class="paren-image-side">
@@ -322,12 +194,12 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
         <section class="parent-tech-section">
             <div class="container">
                 <div class="section-title">
-                    <h2 class="h1 gradient-text-accent text-center">Technologies I Work With</h2>
+                    <h2 class="h1 text-center">Technologies I Work With</h2>
                 </div>
                 <p>Crafting Solutions with Proven, Industry-Standard Tools</p>
                 <div class="parent-tech-icons">
@@ -367,42 +239,109 @@
                     <div class="parent-tab-content">
                         <div id="software" class="parent-tab-pane active">
                             <div class="parent-service-cards">
-                                <div class="parent-service-card"><i class="fas fa-tasks"></i> Project Management</div>
-                                <div class="parent-service-card"><i class="fas fa-code-branch"></i> Greenfield
-                                    Development</div>
-                                <div class="parent-service-card"><i class="fas fa-laptop-code"></i> Frontend Development
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-tasks"></i> Project Management
+                                    </div>
+                                    <p>Organize, track, and deliver successful projects on time.</p>
                                 </div>
-                                <div class="parent-service-card"><i class="fas fa-server"></i> Backend Development</div>
-                                <div class="parent-service-card"><i class="fas fa-plug"></i> APIs Integrations</div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-code-branch"></i> Greenfield Development
+                                    </div>
+                                    <p>Build new software solutions from scratch with innovation.</p>
+                                </div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-laptop-code"></i> Frontend Development
+                                    </div>
+                                    <p>Create user-friendly, responsive, and modern UI interfaces.</p>
+                                </div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-server"></i> Backend Development
+                                    </div>
+                                    <p>Develop robust server-side applications and logic.</p>
+                                </div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-plug"></i> APIs Integrations
+                                    </div>
+                                    <p>Seamlessly connect with third-party services and APIs.</p>
+                                </div>
                             </div>
                         </div>
+
                         <div id="consulting" class="parent-tab-pane">
                             <div class="parent-service-cards">
-                                <div class="parent-service-card"><i class="fas fa-user-tie"></i> Strategic IT Consulting
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-user-tie"></i> Strategic IT Consulting
+                                    </div>
+                                    <p>Provide expert guidance to align technology with business goals.</p>
                                 </div>
-                                <div class="parent-service-card"><i class="fas fa-project-diagram"></i> Project
-                                    Leadership</div>
-                                <div class="parent-service-card"><i class="fas fa-lightbulb"></i> Product Planning</div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-project-diagram"></i> Project Leadership
+                                    </div>
+                                    <p>Lead teams and drive project success with proven methodologies.</p>
+                                </div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-lightbulb"></i> Product Planning
+                                    </div>
+                                    <p>Define and refine product visions with strategic roadmaps.</p>
+                                </div>
                             </div>
                         </div>
+
                         <div id="optimization" class="parent-tab-pane">
                             <div class="parent-service-cards">
-                                <div class="parent-service-card"><i class="fas fa-tachometer-alt"></i> Performance
-                                    Tuning</div>
-                                <div class="parent-service-card"><i class="fas fa-code"></i> Code Refactoring</div>
-                                <div class="parent-service-card"><i class="fas fa-magic"></i> UX Improvements</div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-tachometer-alt"></i> Performance Tuning
+                                    </div>
+                                    <p>Optimize application speed, memory, and resource usage.</p>
+                                </div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-code"></i> Code Refactoring
+                                    </div>
+                                    <p>Clean and improve codebase without altering functionality.</p>
+                                </div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-magic"></i> UX Improvements
+                                    </div>
+                                    <p>Enhance user experience through intuitive design tweaks.</p>
+                                </div>
                             </div>
                         </div>
+
                         <div id="database" class="parent-tab-pane">
                             <div class="parent-service-cards">
-                                <div class="parent-service-card"><i class="fas fa-sitemap"></i> Database Architecture
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-sitemap"></i> Database Architecture
+                                    </div>
+                                    <p>Design scalable and efficient data structures.</p>
                                 </div>
-                                <div class="parent-service-card"><i class="fas fa-search"></i> Query Optimization</div>
-                                <div class="parent-service-card"><i class="fas fa-exchange-alt"></i> Data Migration
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-search"></i> Query Optimization
+                                    </div>
+                                    <p>Improve data retrieval speed and reduce database load.</p>
+                                </div>
+                                <div class="parent-service-card">
+                                    <div>
+                                        <i class="fas fa-exchange-alt"></i> Data Migration
+                                    </div>
+                                    <p>Safely move data across systems without loss.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
@@ -420,7 +359,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h4>See Our</h4>
                         <h2 class="h1 gradient-text-accent">Trusted Clients</h2><br>
                     </div>
                 </div>
@@ -434,111 +372,11 @@
             </div>
         </section>
 
-        <section id="statistic" class="text-center">
-            <div class="container">
-                <div class="row">
-
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="200ms">
-                        <div class="exp-statis">
-                            <h4>Experience</h4>
-                            <div class="statistic-block">
-                                <h2 class="statistic-number">6</h2>
-                                <p>years</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="600ms">
-                        <div class="work-statis">
-                            <h4>Job</h4>
-                            <div class="statistic-block">
-                                <h2 class="statistic-number">50</h2>
-                                <p>projects</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 wow fadeInUp" data-wow-duration=".8s" data-wow-delay="400ms">
-                        <div class="rate-statis">
-                            <h4>GIT</h4>
-                            <div class="statistic-block">
-                                <h2 class="statistic-number">2999</h2>
-                                <p>commits</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="skills" class="add-padding border-bottom-color2">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-sm-6 col-md-5">
-                        <div class="skill-title">
-                            <h2 class="h1 gradient-text-accent" style="color: #5701ab;">My skills</h2>
-                            <p class="small-text-skill">
-                                I am a full stack developer, specialize mainly in backend technologies. I know
-                                <strong>PHP</strong> and <strong>Laravel</strong> framework very well, also working on
-                                frontend with <strong>Vue.js </strong>framework.
-                                I take care of details and
-                                <strong>high code quality</strong>, using tools that help to format and analyze
-                                application code. Some of my skills are <strong>PHP</strong>, <strong>Laravel</strong>,
-                                <strong>JavaScript</strong> <strong>ES6</strong>,
-                                <strong>Vue.js</strong>, Vuetify, <strong>MySQL</strong>, graphQl, Vue Apollo.
-                                <br>Others: Linux, Docker, <strong>VPS Server</strong> Amazon Web Services (AWS),
-                                Digitalocean, <strong>Git</strong>, <strong>REST API</strong>,
-                                Agile/Scrum.
-                            </p>
-                            <h5 style="font-weight: 600;">Having remote job experience.</h5>
-                        </div>
-                    </div>
-
-                    <div class="col-sm-6 col-md-5 col-md-offset-1">
-
-                        <div class="skills-bars text-center">
-
-                            <div class="skills-item skill1">
-                                <span class="percent" data-percent="90">Laravel</span>
-                                <p>90%</p>
-                            </div>
-                            <div class="skills-item skill2">
-                                <span class="percent" data-percent="90">PHP</span>
-                                <p>90%</p>
-                            </div>
-                            <div class="skills-item skill5">
-                                <span class="percent" data-percent="85">MySQL</span>
-                                <p>85%</p>
-                            </div>
-                            <div class="skills-item skill3">
-                                <span class="percent" data-percent="80">Vue.js</span>
-                                <p>80%</p>
-                            </div>
-                            <div class="skills-item skill4">
-                                <span class="percent" data-percent="80">Nuxt.js</span>
-                                <p>80%</p>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-            <style>
-                .single-portfolio img {
-                    height: 300px !important;
-                }
-            </style>
-        </section>
-
         <section class="testimonial-section">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title text-center">
-                        <h4>What our</h4>
+                        <!-- <h4>What our</h4> -->
                         <h2 class="h1 gradient-text-accent">Clients say</h2><br>
                     </div>
                 </div>
@@ -585,8 +423,7 @@
                     <div class="row grid">
                         <div class="col-md-6 col-sm-6 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
-                                <img loading="lazy" src="images/projects/saas.png"
-                                    alt="SAAS E-commerce Platform">
+                                <img loading="lazy" src="images/projects/saas.png" alt="SAAS E-commerce Platform">
                                 <div class="sin-portfolio-overlay"></div>
                                 <div class="sin-portfolio-icon">
                                     <a title="SAAS E-commerce Platform" data-fancybox="images"
@@ -604,14 +441,12 @@
                         </div>
                         <div class="col-md-6 col-sm-6 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
-                                <img loading="lazy" src="images/projects/scrapping.png"
-                                    alt="Product Scrapping Project">
+                                <img loading="lazy" src="images/projects/scrapping.png" alt="Product Scrapping Project">
                                 <div class="sin-portfolio-overlay"></div>
                                 <div class="sin-portfolio-icon">
                                     <a title="Product Scrapping Project" data-fancybox="images"
                                         href="images/projects/scrapping.png"><i class="fa fa-search"></i></a>
-                                    <a href="#" target="_blank" rel=""><i
-                                            class="fa fa-link"></i></a>
+                                    <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a>
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Product Scrapping Project UK Based</h2>
@@ -629,8 +464,7 @@
                                 <div class="sin-portfolio-icon">
                                     <a title="Multi Vendor E-commerce Website" data-fancybox="images"
                                         href="images/projects/multi-vendor-ecom.png"><i class="fa fa-search"></i></a>
-                                    <a href="#" target="_blank" rel=""><i
-                                            class="fa fa-link"></i></a>
+                                    <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a>
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Multi Vendor E-commerce Website</h2>
@@ -1480,15 +1314,17 @@
 
 <script>
     var swiper = new Swiper('.testimonial-slider', {
+        slidesPerView: 2,
+        spaceBetween: 20,
         loop: true,
         autoplay: {
             delay: 3000,
             disableOnInteraction: false
         },
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true
-        }
+        // pagination: {
+        //     el: '.swiper-pagination',
+        //     clickable: true
+        // }
     });
 </script>
 
