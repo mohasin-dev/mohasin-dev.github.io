@@ -15287,7 +15287,7 @@ body:not(.home) main {
     background-color: var(--white);
     padding-top: 22px;
     transition: all .5s ease-in-out;
-    background-color: var(--default) !important;
+    background-color: rgba(19,25,39,1) !important;
 }
 
 .custom-navbar .navbar-brand {
@@ -15389,7 +15389,7 @@ body:not(.home) main {
 .top-nav-collapse .navbar-nav>li>a:focus,
 .top-nav-collapse .navbar-nav>li>a:hover {
     background-color: transparent;
-    color: #333
+    color: #fff
 }
 
 @media (min-width:992px) {
@@ -16981,7 +16981,7 @@ testimonial-content {
 .service-banner {
     background: #7002db;
     color: white;
-    padding: 40px 20px;
+    padding: 80px 20px;
     text-align: center;
     margin-top: 40px;
     border-radius: 8px;
@@ -17019,7 +17019,8 @@ testimonial-content {
     padding: 100px 0;
     /* background-image: radial-gradient(var(--primary) 1px, transparent 1px); */
     background-size: 20px 20px;
-    background-color: #240541;
+    background: linear-gradient(0deg,#192555,#493970);
+    /* background-color: #240541; */
 }
 
 .paren-title {
@@ -17350,7 +17351,7 @@ testimonial-content {
 
 .parent-tab-list button.active,
 .parent-tab-list button:hover {
-    background: var(--third);
+    background: linear-gradient(-60deg,#cb8bcf,#825ef5,#1ea0e8);
     color: var(--white);
 }
 
@@ -17502,8 +17503,20 @@ testimonial-content {
 
 /* Clients Section */
 .client-section {
-    padding: 50px 20px;
+    padding: 80px 20px;
     background: #fff;
+}
+
+.gradiant-btn {
+    border: none !important;
+    color: #fff !important;
+    background: linear-gradient(-60deg,#cb8bcf,#825ef5,#1ea0e8);
+}
+
+.gradiant-btn:hover {
+    animation: animateBg 2s ease infinite alternate;
+    background-size: 200% 300%;
+    transform: scale(1.01);
 }
 
 .client-section h2 {
