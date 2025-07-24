@@ -16253,7 +16253,7 @@ body.home footer {
 }
 
 .single-portfolio {
-    height: 190px;
+    height: 250px;
     /* position: relative; */
     overflow: hidden;
     border: 8px solid var(--third);
@@ -16362,7 +16362,8 @@ article.portfolio p {
 
 .home #portfolio {
     padding: 70px 0;
-    background-color: var(--secondary);
+    /* background-color: var(--secondary); */
+    background: linear-gradient(0deg,#192555,#493970)
 }
 
 .home #portfolio h2{
@@ -17016,7 +17017,7 @@ testimonial-content {
 /* Hero */
 .paren-hero {
     padding: 100px 0;
-    background-image: radial-gradient(var(--primary) 1px, transparent 1px);
+    /* background-image: radial-gradient(var(--primary) 1px, transparent 1px); */
     background-size: 20px 20px;
     background-color: #240541;
 }
@@ -17107,8 +17108,8 @@ testimonial-content {
     border-radius: 50%;
     padding: 5px;
     box-shadow: 0 0 30px var(--primary)a8;
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 350px;
     margin: auto;
 }
 
@@ -17256,7 +17257,7 @@ testimonial-content {
 }
 
 .parent-tech-section {
-    background-color: var(--secondary);
+    background-color: #F8FAFC;
 }
 
 .parent-tech-section h5,
