@@ -17111,10 +17111,10 @@ testimonial-content {
     border: 3px solid var(--primary);
     border-radius: 50%;
     padding: 5px;
-    box-shadow: 0 0 30px var(--primary)a8;
+    box-shadow: 0 0 30px var(--primary);
     width: 350px;
     height: 350px;
-    margin: auto;
+    margin: auto !important;
 }
 
 .paren-img-wrapper img {
@@ -17283,6 +17283,7 @@ testimonial-content {
 .testimonial-section p,
 .parent-tech-section p,
 .parent-services-section p {
+    text-transform: capitalize;
     text-align: center;
     color: #6c757d;
     /* margin-bottom: 40px; */
