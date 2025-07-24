@@ -16979,7 +16979,7 @@ testimonial-content {
 }
 
 .service-banner {
-    background: #7002db;
+    background: linear-gradient(0deg,#192555,#493970);
     color: white;
     padding: 80px 20px;
     text-align: center;
