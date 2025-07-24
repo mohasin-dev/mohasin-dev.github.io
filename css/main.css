@@ -15677,6 +15677,8 @@ body:not(.home) main {
 }
 
 footer {
+    color: #fff;
+    background: linear-gradient(0deg,#192555,#493970);
     padding: 30px 0;
     margin-top: 20px;
     box-shadow: 1px -1px 3px rgba(80, 80, 80, .1)
