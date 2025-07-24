@@ -15209,7 +15209,8 @@ button.close {
 body {
     background: var(--white);
     font-family: Quicksand, sans-serif;
-    padding-top: 80px
+    overflow-x: hidden;
+    /* padding-top: 80px */
 }
 
 body.home {
@@ -15907,7 +15908,7 @@ body.home footer {
     text-transform: uppercase;
     font-family: Montserrat, sans-serif;
     margin-top: 0;
-    margin-bottom: 20px
+    /* margin-bottom: 20px */
 }
 
 #skills .small-text-skill {
@@ -17275,12 +17276,17 @@ testimonial-content {
     color: var(--white);
 }
 
+.contact-section p,
+.resume-section p,
+.portfolio-section p,
+.client-section p,
+.testimonial-section p,
 .parent-tech-section p,
 .parent-services-section p {
     text-align: center;
     color: #6c757d;
-    margin-bottom: 40px;
-    font-size: 16px;
+    /* margin-bottom: 40px; */
+    font-size: 18px;
 }
 
 .parent-tech-section p {
@@ -17344,7 +17350,7 @@ testimonial-content {
     padding: 14px 24px;
     text-align: center;
     border-radius: 40px;
-    font-weight: 500;
+    font-weight: 600;
     margin-bottom: 16px;
     transition: all 0.3s ease;
     color: #495057;
@@ -17398,7 +17404,7 @@ testimonial-content {
 
 .parent-service-card i {
     font-size: 20px;
-    color: #0d6efd;
+    color: #825ef5;
 }
 
 .parent-service-card:hover {
@@ -17523,7 +17529,7 @@ testimonial-content {
 
 .client-section h2 {
     color: var(--primary);
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .client-logos {
