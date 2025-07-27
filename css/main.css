@@ -16865,6 +16865,10 @@ testimonial-content {
     #contact form {
         padding: 0 10px
     }
+
+    .section-title h2{
+        font-size: 22px !important;
+    }
 }
 
 #contact form .butt-msg {
@@ -17608,4 +17612,32 @@ testimonial-content {
 
 .color-switcher.active .color-options .col-4 {
     width: 25%;
+}
+
+@media (max-width: 768px) {
+    .parent-tab-list{
+        flex-wrap: wrap;
+        padding: 0px;
+    }
+
+    .parent-tab-list button{
+        /* width: 45%; */
+        font-size: 12px;
+    }
+
+    .parent-tab-content{
+        padding: 0px;
+    }
+
+    .service-banner h2{
+        font-size: 22px;
+    }
+
+    .service-banner p{
+        font-size: 12px;
+    }
+
+    .service-banner a{
+        font-size: 14px;
+    }
 }
