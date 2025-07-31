@@ -88,7 +88,7 @@
 
         <section class="paren-hero">
             <div class="container">
-                <div class="row align-items-center justify-content-between">
+                <div class="" style="display: flex; align-items: center; justify-content: center; flex-wrap: wrap;">
                     <!-- Left Content -->
                     <div class="col-lg-7">
                         <div class="paren-hello" style="color: #fff;">👋 Hey</div>
@@ -1289,14 +1289,24 @@
             delay: 3000,
             disableOnInteraction: false
         },
-        // pagination: {
-        //     el: '.swiper-pagination',
-        //     clickable: true
-        // }
+         breakpoints: {
+        0: {
+            slidesPerView: 1,
+            spaceBetween: 15
+        },
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 20
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 30
+        }
+    }
     });
 </script>
 
-<script>
+<!-- <script>
     const toggleBtn = document.getElementById('colorToggle');
     const switcher = document.getElementById('colorSwitcher');
     const colorBoxes = document.querySelectorAll('.color-box');
@@ -1312,7 +1322,7 @@
             document.documentElement.style.setProperty(cssVar, color);
         });
     });
-</script>
+</script> -->
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
