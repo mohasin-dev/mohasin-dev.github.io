@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Modern Project Showcase</title>
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --text: #fff;
+      --brand: #7002db;
+      --overlay: rgba(0,0,0,0.75);
+      --radius: 12px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+      max-width: 1200px;
+      width: 100%;
+    }
+
+    .project {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .project:hover {
+      transform: translateY(-6px);
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: var(--overlay);
+      opacity: 0;
+      visibility: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
+      transition: opacity 0.4s ease, visibility 0.4s ease;
+    }
+
+    .project:hover .overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .overlay h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: var(--brand);
+    }
+
+    .overlay p {
+      font-size: 0.95rem;
+      color: #ddd;
+      margin-bottom: 20px;
+      max-width: 260px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons a {
+      background: var(--brand);
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 8px;
+      transition: background 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background: #8c3cff;
+    }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+    .chip { font-size: .75rem; padding: 6px 10px; border-radius: 999px; color: var(--text); background: color-mix(in lab, var(--brand), black 40%); border: 1px solid color-mix(in lab, var(--brand), white 22%); backdrop-filter: blur(4px); }
+
+    @media (max-width: 600px) {
+      .overlay h3 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="projects">
+    <div class="project">
+      <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=1200" alt="Project 1" />
+      <div class="overlay">
+        <h3>ClinicFlow</h3>
+        <p>AI-powered clinic management system with real-time queueing and multi-tenant architecture.</p>
+        <div class="buttons">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?w=1200" alt="Project 2" />
+      <div class="overlay">
+        <h3>Olympus API</h3>
+        <p>Scalable Laravel microservice architecture powering multi-tenant SaaS systems.</p>
+        <div class="buttons">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://images.unsplash.com/photo-1516245834210-c4c142787335?w=1200" alt="Project 3" />
+      <div class="overlay">
+        <h3>Priyotex</h3>
+        <p>High-performance eCommerce platform built with Laravel and Alpine.js.</p>
+        <div class="buttons">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project">
+      <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=1200" alt="Project 4" />
+      <div class="overlay">
+        <h3>Rokholt Scraper</h3>
+        <p>70+ site scraping and aggregation engine with Redis queues and error monitoring.</p>
+        <div class="buttons">
+          <a href="#">Live Demo</a>
+          <a href="#">Source Code</a>
+        </div>
+
+        <div class="chips">
+            <span class="chip">Laravel</span>
+            <span class="chip">Queues</span>
+            <span class="chip">Redis</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <style>
-        
+
     </style>
 </head>
 
@@ -107,14 +107,16 @@
                         <!-- Description -->
                         <p class="paren-description">
                             Software craftsman with over 7 years in the industry, specializing in PHP and Laravel.<br>
-                            I’ve built and scaled applications across various domains with a strong focus on performance, clean architecture, and cloud infrastructure (VPS & AWS)<br>
+                            I’ve built and scaled applications across various domains with a strong focus on
+                            performance, clean architecture, and cloud infrastructure (VPS & AWS)<br>
                             Have deep experience optimizing API
-                            performance, database queries, and system workflows. I enjoy solving complex backend challenges
+                            performance, database queries, and system workflows. I enjoy solving complex backend
+                            challenges
                             that drive scalable products.
                         </p>
 
                         <p class="paren-subscribe-text">
-                           I’m also a <strong>mentor at ADPList</strong>, and a <strong>technical blogger on
+                            I’m also a <strong>mentor at ADPList</strong>, and a <strong>technical blogger on
                                 Medium</strong>, sharing real-world project insights and best practices in PHP, Laravel,
                             Vue.js, React and system design.
                         </p>
@@ -219,7 +221,7 @@
             </div>
         </section>
 
-        <!-- <section class="parent-services-section" id="services">
+        <section class="parent-services-section" id="services">
             <div class="container">
                 <div class="section-title">
                     <h2 class="h1 gradient-text-accent text-center">Services Designed for Your Business Needs</h2>
@@ -341,16 +343,756 @@
 
                 </div>
             </div>
-        </section> -->
+        </section>
 
-         <section id="portfolio" class="portfolio-section">
+        <style>
+            :root {
+                --bg: #0b0f19;
+                --text: #fff;
+                --brand: #7002db;
+                --overlay: rgba(0, 0, 0, 0.85);
+                --radius: 12px;
+            }
+
+            .projects {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 25px;
+                max-width: 1200px;
+                width: 100%;
+            }
+
+            .project {
+                position: relative;
+                border-radius: var(--radius);
+                overflow: hidden;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+                height: 350px;
+            }
+
+            .project:hover {
+                transform: translateY(-6px);
+            }
+
+            .project img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                display: block;
+            }
+
+            .overlay {
+                position: absolute;
+                inset: 0;
+                background: var(--overlay);
+                opacity: 0;
+                visibility: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                padding: 20px;
+                transition: opacity 0.4s ease, visibility 0.4s ease;
+            }
+
+            .project:hover .overlay {
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .overlay h3 {
+                font-size: 2rem;
+                margin-bottom: 10px;
+                color: #fff;
+                font-weight: bold;
+            }
+
+            .overlay p {
+                font-size: 1.7rem;
+                color: #ddd;
+                margin-bottom: 40px;
+            }
+
+            .overlay span {
+                color: #ddd;
+            }
+
+            .buttons {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .buttons a {
+                background: var(--brand);
+                color: #fff;
+                text-decoration: none;
+                padding: 10px 16px;
+                border-radius: 8px;
+                transition: background 0.3s ease;
+            }
+
+            .buttons a:hover {
+                background: #8c3cff;
+            }
+
+            .chips {
+                position: absolute;
+                bottom: 10px;
+                left: 10px;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .chip {
+                font-size: 1.2rem;
+                padding: 3px 10px;
+                border-radius: 999px;
+                color: var(--text);
+                background: color-mix(in lab, var(--brand), black 40%);
+                border: 1px solid color-mix(in lab, var(--brand), white 22%);
+                backdrop-filter: blur(4px);
+            }
+
+            @media (max-width: 600px) {
+                .overlay h3 {
+                    font-size: 1.2rem;
+                }
+            }
+        </style>
+
+        <section id="portfolio" class="portfolio-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2 class="h1 gradient-text-accent text-center">Software & Web Development</h2>
+                        </div>
+                        <p class="text-center mb-4" style="color: #fff;">Check out what I've built</p>
+                    </div>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/priyotex.png" alt="priyotex" />
+                        <div class="overlay">
+                            <h3>Priyotex</h3>
+                            <span>Bangladeshi E-commerce platform - Premium Fabric and Home Textile Brand.
+                            </span>
+                            <p><strong>Role:</strong>Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://www.priyotex.com.bd">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+
+                            <div class="chips">
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Queues</span>
+                                <span class="chip">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. SAAS E-commerce Platform -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/saas.png" alt="SAAS E-commerce Platform" />
+                        <div class="overlay">
+                            <h3>SAAS E-commerce Platform</h3>
+                            <span>SAAS E-commerce Platform</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://brptradeltd.store/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Product Scrapping Project UK Based -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/scrapping.png" alt="Product Scrapping Project UK Based" />
+                        <div class="overlay">
+                            <h3>Product Scrapping Project UK Based</h3>
+                            <span>Product Scrapping Project UK Based</span>
+                            <p><strong>Role:</strong> Senior Software Engineer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Medical SYSTEM ERP - NZ Based -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/medical-erp.jpg" alt="Medical SYSTEM ERP - NZ Based" />
+                        <div class="overlay">
+                            <h3>Medical SYSTEM ERP - NZ Based</h3>
+                            <span>Medical SYSTEM ERP - NZ Based</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Multi Vendor E-commerce Website -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/multi-vendor-ecom.png" alt="Multi Vendor E-commerce Website" />
+                        <div class="overlay">
+                            <h3>Multi Vendor E-commerce Website</h3>
+                            <span>Multi Vendor E-commerce Website</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://ezzico.brptradeltd.store/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Auto mobile shop solution USA based -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/helios.png" alt="Auto mobile shop solution USA based" />
+                        <div class="overlay">
+                            <h3>Auto mobile shop solution USA based</h3>
+                            <span>Auto mobile shop solution USA based</span>
+                            <p><strong>Role:</strong> Senior Software Engineer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">React</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Sass E-commerce Platform (Funnelliner) -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/funnel.png" alt="Sass E-commerce Platform" />
+                        <div class="overlay">
+                            <h3>Sass E-commerce Platform</h3>
+                            <span>Sass E-commerce Platform</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://funnelliner.com/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. POS and Inventory System -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/pos-new.png" alt="POS and Inventory System" />
+                        <div class="overlay">
+                            <h3>POS and Inventory System</h3>
+                            <span>POS and Inventory System</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. E-commerce Website (Muktoshop) -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/single-vendor-ecom.png" alt="E-commerce Website" />
+                        <div class="overlay">
+                            <h3>E-commerce Website</h3>
+                            <span>E-commerce Website</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://www.muktoshopbd.com/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/parceldex.png" alt="Courier Website" />
+                        <div class="overlay">
+                            <h3>Courier Website</h3>
+                            <span>Courier Website</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://parceldex.com.bd/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/pa1l.png" alt="Fundraising Website & App" />
+                        <div class="overlay">
+                            <h3>Fundraising Website & App</h3>
+                            <span>Fundraising Website & App</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://pa1l.online/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                               
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/badhan.png" alt="A blood donation website & mobile app" />
+                        <div class="overlay">
+                            <h3>A blood donation website & mobile app</h3>
+                            <span>A Voluntary Blood Donors' Organization</span>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://badhan.org/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Nuxt.js</span>
+                                <span class="chip">Webpack</span><span
+                                    class="chip">Yarn</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/feeder.png" alt="Feedback Management Platform" />
+                        <div class="overlay">
+                            <h3>Feedback Management Platform</h3>
+                            <p><strong>Role:</strong> PHP Laravel Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://feeder.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span><span class="chip">GraphQL</span>
+                                <span class="chip">MySQL</span><span class="chip">REST</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">JavaScript</span><span class="chip">PHPUnit</span><span
+                                    class="chip">Webpack</span><span class="chip">Yarn</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/global.png" alt="Multi vendor E-commerce Website" />
+                        <div class="overlay">
+                            <h3>Multi vendor E-commerce Website</h3>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://globalpabd.com/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                                <span class="chip">Webpack</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/pos.png" alt="Point of Sale" />
+                        <div class="overlay">
+                            <h3>Point of Sale</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://pos.gainhq.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span><span class="chip">Vuex</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">Sass</span><span
+                                    class="chip">JavaScript</span><span class="chip">jQuery</span><span
+                                    class="chip">Webpack</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/hrm.png" alt="HRM Software" />
+                        <div class="overlay">
+                            <h3>HRM Software</h3>
+                            <p><strong>Role:</strong> Full-stack Developer, Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://payday.gainhq.com/admin/users/login">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span><span class="chip">Vuex</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">Sass</span><span
+                                    class="chip">JavaScript</span><span class="chip">jQuery</span><span
+                                    class="chip">Webpack</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/salon-booking.png" alt="Salon Booking system" />
+                        <div class="overlay">
+                            <h3>Salon Booking system</h3>
+                            <p><strong>Role:</strong> Full-stack Developer, Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://salon-booking.gainhq.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span><span class="chip">Vuex</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">Sass</span><span
+                                    class="chip">JavaScript</span><span class="chip">jQuery</span><span
+                                    class="chip">Webpack</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/prep-excellence.png" alt="LMS (Learning Management System)" />
+                        <div class="overlay">
+                            <h3>LMS (Learning Management System)</h3>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://prepexcellence.com/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">MySQL</span><span class="chip">Nuxt.js</span>
+                                <span class="chip">REST API</span><span class="chip">Stripe</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">JavaScript</span><span class="chip">Webpack</span><span
+                                    class="chip">Yarn</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/grocery.png" alt="Multi vendor E-commerce website and mobile app" />
+                        <div class="overlay">
+                            <h3>Multi vendor E-commerce website and mobile app</h3>
+                            <p><strong>Role:</strong> Team Lead</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://grocery.binary-fusion.com/">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">MySQL</span>
+                                <span class="chip">REST API</span><span class="chip">Stripe</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">JavaScript</span><span class="chip">Webpack</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/evp.png" alt="Electronic Visa Processing" />
+                        <div class="overlay">
+                            <h3>Electronic Visa Processing</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://feemaaevp.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span><span class="chip">Vuex</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">Sass</span><span
+                                    class="chip">JavaScript</span><span class="chip">jQuery</span><span
+                                    class="chip">Webpack</span><span class="chip">Yarn</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/rental.png" alt="Rental Management System" />
+                        <div class="overlay">
+                            <h3>Rental Management System</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://rental.feemaaevp.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span><span class="chip">Vuex</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">Sass</span><span
+                                    class="chip">JavaScript</span><span class="chip">jQuery</span><span
+                                    class="chip">Webpack</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/inventory.png" alt="Inventory Management System" />
+                        <div class="overlay">
+                            <h3>Inventory Management System</h3>
+                            <p><strong>Role:</strong> Full-stack Developer, Project Manager</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a target="_blank"
+                                    href="https://github.com/mohasinhossain/Laravel-Vue.js-Inventory">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span><span class="chip">Vuex</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">Sass</span><span
+                                    class="chip">JavaScript</span><span class="chip">jQuery</span><span
+                                    class="chip">Webpack</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/forum.PNG" alt="Real Time Single Page Forum App" />
+                        <div class="overlay">
+                            <h3>A real Time Single Page Forum App</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://forum.codehavit.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">JavaScript</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/lubricant.png" alt="ERP of Supply Chain Management" />
+                        <div class="overlay">
+                            <h3>ERP of Supply Chain Management</h3>
+                            <p><strong>Role:</strong> PHP Laravel Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://lub.codehavit.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">API</span><span class="chip">REST</span>
+                                <span class="chip">jQuery</span><span class="chip">JavaScript</span><span
+                                    class="chip">HTML</span><span class="chip">CSS</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/green-hat-bazar.PNG" alt="E-commerce website (Green Hat Bazar)" />
+                        <div class="overlay">
+                            <h3>E-commerce website</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a target="_blank" href="https://github.com/mohasinhossain/green_shopping_cart">Source
+                                    Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">MySQL</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">jQuery</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/vip-landmark.jpg" alt="Real state website" />
+                        <div class="overlay">
+                            <h3>Real state website</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="https://viplandmark.feemaaevp.com">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">MySQL</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">jQuery</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/agency.jpg" alt="Recruiting & visa processing agency website" />
+                        <div class="overlay">
+                            <h3>Recruiting & visa processing agency website</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a target="_blank" href="https://github.com/mohasinhossain/green_shopping_cart">Source
+                                    Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">MySQL</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">jQuery</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/jobs-portal.PNG" alt="Jobs portal website" />
+                        <div class="overlay">
+                            <h3>Jobs portal website</h3>
+                            <p><strong>Role:</strong> Full-stack Developer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a target="_blank" href="https://github.com/mohasinhossain/jobs-portal">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">MySQL</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">jQuery</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section" style="margin-top: 70px;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="section-title">
+                            <h2 class="h1 gradient-text-accent text-center">IOS & Android Mobile App</h2>
+                        </div>
+                        <p class="text-center mb-4" style="color: #fff;">Check out what I've built</p>
+                    </div>
+                </div>
+                <div class="projects">
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/badhan.webp" alt="priyotex" />
+                        <div class="overlay">
+                            <h3>Badhan Mobile App</h3>
+                            <span>A Voluntary Blood Donors' Organization.
+                            </span>
+                            <p><strong>Role:</strong>Senior Software Engineer</p>
+                            <div class="buttons">
+                                <!-- <a target="_blank" href="#">App Store</a> -->
+                                <a href="https://play.google.com/store/apps/details?id=com.badhan.blood.badhan">Play
+                                    Store →</a>
+                            </div>
+
+                            <div class="chips">
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Queues</span>
+                                <span class="chip">Redis</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 1. SAAS E-commerce Platform -->
+                    <div class="project">
+                        <img loading="lazy" src="images/projects/bus-ticket.webp" alt="SAAS E-commerce Platform" />
+                        <div class="overlay">
+                            <h3>Online Bus Ticket Booking App</h3>
+                            <span>Online Bus Ticket Booking App</span>
+                            <p><strong>Role:</strong>Senior Software Engineer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Play Store →</a>
+                                <!-- <a href="#">Source Code</a> -->
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Product Scrapping Project UK Based -->
+                    <!-- <div class="project">
+                        <img loading="lazy" src="images/projects/scrapping.png" alt="Product Scrapping Project UK Based" />
+                        <div class="overlay">
+                            <h3>Product Scrapping Project UK Based</h3>
+                            <p><strong>Role:</strong> Senior Software Engineer</p>
+                            <div class="buttons">
+                                <a target="_blank" href="#">Live Demo →</a>
+                                <a href="#">Source Code</a>
+                            </div>
+                            <div class="chips">
+                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
+                                    class="chip">Vue.js</span>
+                                <span class="chip">MySQL</span><span class="chip">REST API</span>
+                                <span class="chip">HTML</span><span class="chip">CSS</span><span
+                                    class="chip">JavaScript</span><span class="chip">Vite</span>
+                            </div>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+
+        <!-- <section id="portfolio" class="portfolio-section">
             <div class="container">
 
                 <div class="row">
                     <div class="col-md-12">
-                        <!-- <div class="section-title text-center">
+                        <div class="section-title text-center">
                             <h2 class="h1 gradient-text-accent">Portfolio</h2>
-                        </div> -->
+                        </div>
                         <div class="section-title">
                             <h2 class="h1 gradient-text-accent text-center">My Projects</h2>
                         </div>
@@ -371,7 +1113,7 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>SAAS E-commerce Platform</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -384,7 +1126,7 @@
                                 <div class="sin-portfolio-icon">
                                     <a title="Product Scrapping Project" data-fancybox="images"
                                         href="images/projects/scrapping.png"><i class="fa fa-search"></i></a>
-                                    <!-- <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a> -->
+                                    <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a>
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Product Scrapping Project UK Based</h2>
@@ -396,16 +1138,17 @@
                         </div>
                         <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
-                                <img loading="lazy" src="images/projects/medical-erp.jpg" alt="Medical SYSTEM ERP - NZ Based">
+                                <img loading="lazy" src="images/projects/medical-erp.jpg"
+                                    alt="Medical SYSTEM ERP - NZ Based">
                                 <div class="sin-portfolio-overlay"></div>
                                 <div class="sin-portfolio-icon">
                                     <a title="Medical SYSTEM ERP - NZ Based" data-fancybox="images"
                                         href="images/projects/medical-erp.jpg"><i class="fa fa-search"></i></a>
-                                    <!-- <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a> -->
+                                    <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a>
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Medical SYSTEM ERP - NZ Based</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -419,11 +1162,12 @@
                                 <div class="sin-portfolio-icon">
                                     <a title="Multi Vendor E-commerce Website" data-fancybox="images"
                                         href="images/projects/multi-vendor-ecom.png"><i class="fa fa-search"></i></a>
-                                    <a href="https://ezzico.brptradeltd.store/" target="_blank" rel=""><i class="fa fa-link"></i></a>
+                                    <a href="https://ezzico.brptradeltd.store/" target="_blank" rel=""><i
+                                            class="fa fa-link"></i></a>
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Multi Vendor E-commerce Website</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -436,7 +1180,7 @@
                                 <div class="sin-portfolio-icon">
                                     <a title="Auto mobile shop solution" data-fancybox="images"
                                         href="images/projects/helios.png"><i class="fa fa-search"></i></a>
-                                    <!-- <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a> -->
+                                    <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a>
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Auto mobile shop solution USA based</h2>
@@ -458,7 +1202,7 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Sass E-commerce Platform</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -471,11 +1215,11 @@
                                 <div class="sin-portfolio-icon">
                                     <a title="POS and Inventory System" data-fancybox="images"
                                         href="images/projects/pos-new.png"><i class="fa fa-search"></i></a>
-                                    <!-- <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a> -->
+                                    <a href="#" target="_blank" rel=""><i class="fa fa-link"></i></a>
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>POS and Inventory System</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -494,7 +1238,7 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>E-commerce Website</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -512,7 +1256,7 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Courier Website</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -529,7 +1273,7 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Fundraising Website & App</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Vite</p>
                                 </div>
@@ -547,7 +1291,7 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>A blood donation website & mobile app</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, MySQL, Nuxt.js, REST API, Stripe,
                                         HTML, CSS, JavaScript, Webpack, Yarn</p>
                                 </div>
@@ -583,7 +1327,7 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Multi vendor E-commerce Website</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, Vue.js, MySQL, REST API, Stripe,
                                         HTML, CSS, JavaScript, Webpack</p>
                                 </div>
@@ -657,14 +1401,14 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>LMS(Learning Management System)</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, MySQL, Nuxt.js, REST API, Stripe,
                                         HTML, CSS, JavaScript, Webpack, Yarn</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
+                        <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
                                 <img loading="lazy" src="images/projects/grocery.png"
                                     alt="Multi vendor E-commerce website and mobile app">
@@ -677,13 +1421,13 @@
                                 </div>
                                 <div class="portfolio-caption">
                                     <h2>Multi vendor E-commerce website and mobile app</h2>
-                                    <p><strong>Role:</strong>Team Lead & Senior software engineer</p>
+                                    <p><strong>Role:</strong>Team Lead</p>
                                     <p><strong>Technologies:</strong> PHP, Laravel, MySQL, REST, API, Stripe, HTML, CSS,
                                         JavaScript, Webpack</p>
                                 </div>
                             </div>
-                        </div> -->
-             
+                        </div>
+
                         <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
                                 <img loading="lazy" src="images/projects/evp.png" alt="Electronic Vissa Processing">
@@ -702,7 +1446,7 @@
                                 </div>
                             </div>
                         </div>
-                            <!-- <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
+                        <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
                                 <img loading="lazy" src="images/projects/rental.png" alt="Rental Management System">
                                 <div class="sin-portfolio-overlay"></div>
@@ -720,8 +1464,8 @@
                                         HTML, Sass, JavaScript, jQuery, Webpack</p>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
                                 <img loading="lazy" src="images/projects/inventory.png"
                                     alt="Inventory Management System">
@@ -739,8 +1483,8 @@
                                         HTML, Sass, JavaScript, jQuery, Webpack</p>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
                                 <img loading="lazy" src="images/projects/forum.PNG"
                                     alt="Real Time Single Page Forum App">
@@ -811,24 +1555,26 @@
                                     <p><strong>Technologies:</strong> PHP, Laravel, MySQL, HTML, CSS, jQuery</p>
                                 </div>
                             </div>
-                        </div> -->
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
-                                    <div class="single-portfolio">
-                                        <img loading="lazy" src="images/projects/agency.jpg" alt="Recruting & vissa processing agency website">
-                                        <div class="sin-portfolio-overlay"></div>
-                                        <div class="sin-portfolio-icon">
-                                            <a title="Recruting & vissa processing agency website" data-fancybox="images" href="images/projects/agency.jpg"><i
-                    class="fa fa-search"></i></a>
-                                            <a href="https://github.com/mohasinhossain/green_shopping_cart" target="_blank" rel=""><i class="fa fa-link"></i></a>
-                                        </div>
-                                        <div class="portfolio-caption">
-                                            <h2>Recruting & vissa processing agency website </h2>
-                                            <p><strong>Role:</strong> Full-stack developer</p>
-                                            <p><strong>Technologies:</strong> PHP, Laravel, MySQL, HTML, CSS, jQuery</p>
-                                        </div>
-                                    </div>
-                                </div> -->
-                        <!-- <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
+                            <div class="single-portfolio">
+                                <img loading="lazy" src="images/projects/agency.jpg"
+                                    alt="Recruting & vissa processing agency website">
+                                <div class="sin-portfolio-overlay"></div>
+                                <div class="sin-portfolio-icon">
+                                    <a title="Recruting & vissa processing agency website" data-fancybox="images"
+                                        href="images/projects/agency.jpg"><i class="fa fa-search"></i></a>
+                                    <a href="https://github.com/mohasinhossain/green_shopping_cart" target="_blank"
+                                        rel=""><i class="fa fa-link"></i></a>
+                                </div>
+                                <div class="portfolio-caption">
+                                    <h2>Recruting & vissa processing agency website </h2>
+                                    <p><strong>Role:</strong> Full-stack developer</p>
+                                    <p><strong>Technologies:</strong> PHP, Laravel, MySQL, HTML, CSS, jQuery</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-4 col-xs-12 grid-item illustration">
                             <div class="single-portfolio">
                                 <img loading="lazy" src="images/projects/jobs-portal.PNG" alt="Jobs portal website">
                                 <div class="sin-portfolio-overlay"></div>
@@ -844,18 +1590,18 @@
                                     <p><strong>Technologies:</strong> PHP, Laravel, MySQL, HTML, CSS, jQuery</p>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
-                <!-- <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-12
+                <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-12
                     col-md-offset-0 text-center">
                     <div class="full-portfolio more" style="margin-top: 20px;">
                         <a href="portfolio.html" class="gradiant-btn">See more</a>
                     </div>
-                </div> -->
+                </div>
             </div>
 
-        </section>
+        </section> -->
 
         <!-- <section>
             <div class="service-banner" style="background-color: 1px 1px 3px rgba(80, 80, 80, .1) !important;">
@@ -866,7 +1612,7 @@
             </div>
         </section> -->
 
-        <!-- <section class="client-section">
+        <section class="client-section">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
@@ -885,15 +1631,16 @@
                 <img src="images/clients/mactrons.png" alt="mactrons">
                 <img src="images/clients/savebuyz.jpeg" alt="savebuyz">
             </div>
-        </section> -->
+        </section>
 
-        <!-- <section class="testimonial-section">
+        <section class="testimonial-section">
             <div class="row">
                 <div class="col-md-12">
                     <div class="section-title">
                         <h2 class="h1 gradient-text-accent text-center">What Clients say</h2>
                     </div>
-                    <p class="text-center" style="margin-bottom: 40px;">See what others say about me on the world wide web</p>
+                    <p class="text-center" style="margin-bottom: 40px;">See what others say about me on the world wide
+                        web</p>
                 </div>
             </div>
             <div class="swiper testimonial-slider">
@@ -920,9 +1667,9 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section> -->
+        </section>
 
-       
+
         <style>
             .cta {
                 text-align: center;
@@ -942,7 +1689,8 @@
                 margin: 0 0 20px;
             }
 
-            .cta a, .more a {
+            .cta a,
+            .more a {
                 font-weight: bold;
                 font-size: 1.5rem;
                 display: inline-block;
@@ -1028,7 +1776,7 @@
                                     </p>
                                 </div>
                             </li>
-                            <!-- <li class="timeline-item ">
+                            <li class="timeline-item ">
                                 <div class="timeline-info wow fadeInLeft" data-wow-duration="
     .8s" data-wow-delay="200ms">
                                     <span>2022-11 - Present</span>
@@ -1043,7 +1791,7 @@
                                     <p># Feature developed in a Task Management App.
                                     </p>
                                 </div>
-                            </li> -->
+                            </li>
                             <li class="timeline-item ">
                                 <div class="timeline-info wow fadeInLeft" data-wow-duration="
     .8s" data-wow-delay="200ms">
@@ -1141,7 +1889,7 @@
                             <h4>Get in Touch</h4>
                             <h2 class="h1 gradient-text-accent">Contact</h2>
                         </div> -->
-                         <div class="section-title">
+                        <div class="section-title">
                             <h2 class="h1 gradient-text-accent text-center">Contact</h2>
                         </div>
                         <p class="text-center mb-4">Get in Touch</p>
@@ -1255,20 +2003,19 @@
 
 
     </main>
-    <footer id="footer"
-            style="width: 100%; text-align: center; box-shadow: 1px -1px 3px rgba(80, 80, 80, .1);">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="paren-icons">
-                            <a href="https://github.com/mohasin-dev"><i class="fab fa-linkedin"></i></a>
-                            <a href="https://github.com/mohasin-dev"><i class="fab fa-github"></i></a>
-                            <a href="https://mohasin-dev.medium.com"><i class="fab fa-medium"></i></a>
-                            <a href="https://twitter.com/mohasindev"><i class="fab fa-twitter"></i></a>
-                        </div>
-                        <div class="social-links text-center" style="margin-top: 10px;">
+    <footer id="footer" style="width: 100%; text-align: center; box-shadow: 1px -1px 3px rgba(80, 80, 80, .1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="paren-icons">
+                        <a href="https://github.com/mohasin-dev"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/mohasin-dev"><i class="fab fa-github"></i></a>
+                        <a href="https://mohasin-dev.medium.com"><i class="fab fa-medium"></i></a>
+                        <a href="https://twitter.com/mohasindev"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <div class="social-links text-center" style="margin-top: 10px;">
 
-                            <!-- <span class="fantasy-social-links"><a href="https://github.com/mohasin-dev" rel=""
+                        <!-- <span class="fantasy-social-links"><a href="https://github.com/mohasin-dev" rel=""
                                     target="_blank"><i class='fab-github'></i></a></span>
 
                             <span class="fantasy-social-links"><a href="https://linkedin.com/in/mohasin-dev" rel=""
@@ -1281,13 +2028,13 @@
                             <span class="fantasy-social-links"><a href="https://twitter.com/mohasindev" rel=""
                                     target="_blank"><i class='fab-twitter'></i></a></span> -->
 
-                            <div class="copyright">All rights reserved &copy; 2018-2025 | Mohasin Hossain - Full-stack
-                                PHP, Laravel, Vue.js Developer</div>
-                        </div>
+                        <div class="copyright">All rights reserved &copy; 2018-2025 | Mohasin Hossain - Full-stack
+                            PHP, Laravel, Vue.js Developer</div>
                     </div>
-
                 </div>
+
             </div>
+        </div>
     </footer>
     <!-- <div id="scroll-top">
                 <i class="fa fa-angle-up fa-2x"></i>
@@ -1306,20 +2053,20 @@
             delay: 3000,
             disableOnInteraction: false
         },
-         breakpoints: {
-        0: {
-            slidesPerView: 1,
-            spaceBetween: 15
-        },
-        768: {
-            slidesPerView: 1,
-            spaceBetween: 20
-        },
-        1024: {
-            slidesPerView: 2,
-            spaceBetween: 30
+        breakpoints: {
+            0: {
+                slidesPerView: 1,
+                spaceBetween: 15
+            },
+            768: {
+                slidesPerView: 1,
+                spaceBetween: 20
+            },
+            1024: {
+                slidesPerView: 2,
+                spaceBetween: 30
+            }
         }
-    }
     });
 </script>
 
