@@ -15896,7 +15896,7 @@ body.home footer {
 }
 
 #skills {
-    padding: 95px 0
+    padding: 95px 0;
 }
 
 #skills .skill-title {
@@ -15996,8 +15996,15 @@ body.home footer {
 }
 
 @media only screen and (max-width:767px) {
-    #skills {
-        padding: 40px 0
+    #contact
+    #skills
+    #about,
+    #contact,
+    #portfolio,
+    #services,
+    #statistic,
+    #testimonials {
+        padding: 40px 0;
     }
 
     #skills .skills-item {
@@ -16023,8 +16030,15 @@ body.home footer {
 }
 
 @media only screen and (max-width:320px) {
-    #skills {
-        padding: 70px 0
+    #contact
+    #skills
+    #about,
+    #contact,
+    #portfolio,
+    #services,
+    #statistic,
+    #testimonials {
+        padding: 20px 0;
     }
 }
 
@@ -16210,7 +16224,7 @@ body.home footer {
     position: relative;
     z-index: 1;
     color: #333;
-    font-size: 32px
+    font-size: 36px
 }
 
 #portfolio .type-of-work {
@@ -16976,6 +16990,7 @@ testimonial-content {
     opacity: 1
 }
 
+#skills,
 #about,
 #contact,
 #portfolio,
@@ -16990,7 +17005,7 @@ testimonial-content {
     color: white;
     padding: 80px 20px;
     text-align: center;
-    margin-top: 40px;
+    margin: 40px 0;
     border-radius: 8px;
 }
 
@@ -17136,11 +17151,33 @@ testimonial-content {
 }
 
 @media (max-width: 767px) {
+    .home #portfolio {
+        padding: 40px;
+    }
+
+    #skills,
+    #about,
+    #portfolio,
+    #services,
+    #statistic,
+    #testimonials {
+        padding: 40px 0;
+    }
+
+    #contact {
+        padding: 40px 0 10px 0 !important;
+    }
+
+    .paren-hero {
+        padding: 30px 0;
+    }
+
     .paren-title {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     .paren-img-wrapper {
+        margin-top: 20px !important;
         width: 180px;
         height: 180px;
     }
@@ -17300,7 +17337,7 @@ testimonial-content {
 
 .parent-tech-icons {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(64px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
     gap: 24px;
     max-width: 920px;
     margin: 0 auto;
@@ -17309,8 +17346,8 @@ testimonial-content {
 }
 
 .parent-tech-icons .icon {
-    width: 64px;
-    height: 64px;
+    width: 74px;
+    height: 74px;
     background-color: #fff;
     border-radius: 16px;
     display: flex;
@@ -17326,6 +17363,11 @@ testimonial-content {
     transform: translateY(-6px) scale(1.05);
     box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
     background-color: #f8f9fa;
+    color: var(--primary);
+}
+
+.parent-tech-icons .icon:hover i {
+    color: var(--secondary);
 }
 
 .parent-tab-wrapper {
@@ -17623,6 +17665,7 @@ testimonial-content {
     .parent-tab-list button{
         /* width: 45%; */
         font-size: 12px;
+        margin-bottom: 0;
     }
 
     .parent-tab-content{

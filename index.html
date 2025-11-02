@@ -41,7 +41,6 @@
                 <div class="overlay">
                     <div class="navbar custom-navbar navbar-fixed-top " role="navigation">
                         <div class="container">
-
                             <div class="navbar-header">
                                 <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                     <span class="icon icon-bar"></span>
@@ -57,7 +56,7 @@
                                 <ul class="nav navbar-nav navbar-right articles">
                                     <li class="active"><a class="smoothScroll" href="index.html">Home</a>
                                     </li>
-                                    <!-- <li><a class="smoothScroll" href="#services">Services</a> -->
+                                    <li><a class="smoothScroll" href="#services">Services</a>
                                     </li>
                                     <li><a class="smoothScroll" href="#skills">Skills</a>
                                     </li>
@@ -75,11 +74,6 @@
                                     </li>
                                 </ul>
                             </div>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <div class="but-down text-center">
-                            <a href="#about"><i class="fa fa-angle-down"></i></a>
                         </div>
                     </div>
                 </div>
@@ -202,21 +196,25 @@
                 </div>
                 <p style="color: #161E2E;">Crafting Solutions with Proven, Industry-Standard Tools</p>
                 <div class="parent-tech-icons" style="margin-top: 40px;">
-                    <div class="icon"><i class="fab fa-html5"></i></div>
-                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
-                    <div class="icon"><i class="fab fa-js"></i></div>
+                    <div class="icon"><i class="fab fa-python"></i></div>
                     <div class="icon"><i class="fab fa-php"></i></div>
                     <div class="icon"><i class="fab fa-laravel"></i></div>
                     <div class="icon"><i class="fab fa-vuejs"></i></div>
                     <div class="icon"><i class="fab fa-react"></i></div>
+                    <div class="icon"><i class="fab fa-js"></i></div>
+                    <div class="icon"><i class="fab fa-npm"></i></div>
+                    <div class="icon"><i class="fab fa-css3-alt"></i></div>
+                    <div class="icon"><i class="fab fa-html5"></i></div>
+                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <div class="icon"><i class="fas fa-cloud"></i></div>
+                    <div class="icon"><i class="fab fa-aws"></i></div>
+                    <div class="icon"><i class="fab fa-docker"></i></div>
                     <div class="icon"><i class="fab fa-git-alt"></i></div>
                     <div class="icon"><i class="fab fa-github"></i></div>
-                    <div class="icon"><i class="fab fa-aws"></i></div>
-                    <div class="icon"><i class="fas fa-database"></i></div>
+                    <div class="icon"><i class="fab fa-bitbucket"></i></div>
                     <div class="icon"><i class="fas fa-mobile-alt"></i></div>
-                    <div class="icon"><i class="fas fa-cloud"></i></div>
-                    <div class="icon"><i class="fab fa-docker"></i></div>
-                    <div class="icon"><i class="fab fa-npm"></i></div>
+                    <div class="icon"><i class="fab fa-jira"></i></div>
+                    <!-- <div class="icon"><i class="fab fa-cpanel"></i></div> -->
                 </div>
             </div>
         </section>
@@ -382,7 +380,7 @@
                 display: block;
             }
 
-            .overlay {
+            .overlay2 {
                 position: absolute;
                 inset: 0;
                 background: var(--overlay);
@@ -397,25 +395,26 @@
                 transition: opacity 0.4s ease, visibility 0.4s ease;
             }
 
-            .project:hover .overlay {
+            .project:hover .overlay2 {
                 opacity: 1;
                 visibility: visible;
             }
 
-            .overlay h3 {
+            .overlay2 h3 {
                 font-size: 2rem;
                 margin-bottom: 10px;
                 color: #fff;
                 font-weight: bold;
+                margin-top: 0;
             }
 
-            .overlay p {
+            .overlay2 p {
                 font-size: 1.7rem;
                 color: #ddd;
                 margin-bottom: 40px;
             }
 
-            .overlay span {
+            .overlay2 span {
                 color: #ddd;
             }
 
@@ -443,13 +442,15 @@
                 position: absolute;
                 bottom: 10px;
                 left: 10px;
+                right: 10px;
                 display: flex;
                 flex-wrap: wrap;
-                gap: 8px;
+                gap: 7px;
             }
 
             .chip {
-                font-size: 1.2rem;
+                font-size: 1rem;
+                font-weight: 600;
                 padding: 3px 10px;
                 border-radius: 999px;
                 color: var(--text);
@@ -459,8 +460,8 @@
             }
 
             @media (max-width: 600px) {
-                .overlay h3 {
-                    font-size: 1.2rem;
+                .overlay2 h3 {
+                    font-size: 2rem;
                 }
             }
         </style>
@@ -478,8 +479,8 @@
                 <div class="projects">
                     <div class="project">
                         <img loading="lazy" src="images/projects/priyotex.png" alt="priyotex" />
-                        <div class="overlay">
-                            <h3>Priyotex</h3>
+                        <div class="overlay2">
+                            <h3>Priyotex E-commerce Website</h3>
                             <span>Bangladeshi E-commerce platform - Premium Fabric and Home Textile Brand.
                             </span>
                             <p><strong>Role:</strong>Team Lead</p>
@@ -489,9 +490,10 @@
                             </div>
 
                             <div class="chips">
+                                <span class="chip">PHP</span>
                                 <span class="chip">Laravel</span>
-                                <span class="chip">Queues</span>
-                                <span class="chip">Redis</span>
+                                <span class="chip">Sslcommerz</span>
+                                <span class="chip">Bkash</span>
                             </div>
                         </div>
                     </div>
@@ -499,7 +501,7 @@
                     <!-- 1. SAAS E-commerce Platform -->
                     <div class="project">
                         <img loading="lazy" src="images/projects/saas.png" alt="SAAS E-commerce Platform" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>SAAS E-commerce Platform</h3>
                             <span>SAAS E-commerce Platform</span>
                             <p><strong>Role:</strong> Team Lead</p>
@@ -508,26 +510,34 @@
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Vue.js</span>
+                                <span class="chip">Sslcommerz</span>
+                                <span class="chip">Bkash</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- 2. Product Scrapping Project UK Based -->
                     <div class="project">
-                        <img loading="lazy" src="images/projects/scrapping.png" alt="Product Scrapping Project UK Based" />
-                        <div class="overlay">
-                            <h3>Product Scrapping Project UK Based</h3>
-                            <span>Product Scrapping Project UK Based</span>
+                        <img loading="lazy" src="images/projects/scrapping.png"
+                            alt="Product Scrapping Project UK Based" />
+                        <div class="overlay2">
+                            <h3>Product Scrapping Project - UK</h3>
+                            <span>Product Scrapping Project</span>
                             <p><strong>Role:</strong> Senior Software Engineer</p>
                             <div class="buttons">
                                 <a target="_blank" href="#">Live Demo →</a>
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Vue.js</span>
+                                <span class="chip">Redis</span>
+                                <span class="chip">Queue</span>
+                                <span class="chip">API</span>
                             </div>
                         </div>
                     </div>
@@ -535,25 +545,28 @@
                     <!-- 3. Medical SYSTEM ERP - NZ Based -->
                     <div class="project">
                         <img loading="lazy" src="images/projects/medical-erp.jpg" alt="Medical SYSTEM ERP - NZ Based" />
-                        <div class="overlay">
-                            <h3>Medical SYSTEM ERP - NZ Based</h3>
-                            <span>Medical SYSTEM ERP - NZ Based</span>
+                        <div class="overlay2">
+                            <h3>Medical SYSTEM ERP - NZ</h3>
+                            <span>Medical SYSTEM ERP</span>
                             <p><strong>Role:</strong> Team Lead</p>
                             <div class="buttons">
                                 <a target="_blank" href="#">Live Demo →</a>
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Vue.js</span>
+                                <span class="chip">API</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- 4. Multi Vendor E-commerce Website -->
                     <div class="project">
-                        <img loading="lazy" src="images/projects/multi-vendor-ecom.png" alt="Multi Vendor E-commerce Website" />
-                        <div class="overlay">
+                        <img loading="lazy" src="images/projects/multi-vendor-ecom.png"
+                            alt="Multi Vendor E-commerce Website" />
+                        <div class="overlay2">
                             <h3>Multi Vendor E-commerce Website</h3>
                             <span>Multi Vendor E-commerce Website</span>
                             <p><strong>Role:</strong> Team Lead</p>
@@ -562,26 +575,32 @@
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Vue.js</span>
+                                <span class="chip">Sslcommerz</span>
+                                <span class="chip">Bkash</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- 5. Auto mobile shop solution USA based -->
                     <div class="project">
-                        <img loading="lazy" src="images/projects/helios.png" alt="Auto mobile shop solution USA based" />
-                        <div class="overlay">
-                            <h3>Auto mobile shop solution USA based</h3>
-                            <span>Auto mobile shop solution USA based</span>
+                        <img loading="lazy" src="images/projects/helios.png"
+                            alt="Auto mobile shop solution USA based" />
+                        <div class="overlay2">
+                            <h3>Auto Mobile Shop Solution - USA</h3>
+                            <span>Auto mobile shop solution</span>
                             <p><strong>Role:</strong> Senior Software Engineer</p>
                             <div class="buttons">
                                 <a target="_blank" href="#">Live Demo →</a>
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">React</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">React</span>
+                                <span class="chip">Pusher</span>
                             </div>
                         </div>
                     </div>
@@ -589,18 +608,22 @@
                     <!-- 6. Sass E-commerce Platform (Funnelliner) -->
                     <div class="project">
                         <img loading="lazy" src="images/projects/funnel.png" alt="Sass E-commerce Platform" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Sass E-commerce Platform</h3>
                             <span>Sass E-commerce Platform</span>
-                            <p><strong>Role:</strong> Team Lead</p>
+                            <p><strong>Role:</strong> Senior Software Engineer</p>
                             <div class="buttons">
                                 <a target="_blank" href="https://funnelliner.com/">Live Demo →</a>
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
-                                
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">React</span>
+                                <span class="chip">Redis</span>
+                                <span class="chip">Queue</span>
+                                <span class="chip">Sslcommerz</span>
+                                <span class="chip">Bkash</span>
                             </div>
                         </div>
                     </div>
@@ -608,7 +631,7 @@
                     <!-- 7. POS and Inventory System -->
                     <div class="project">
                         <img loading="lazy" src="images/projects/pos-new.png" alt="POS and Inventory System" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>POS and Inventory System</h3>
                             <span>POS and Inventory System</span>
                             <p><strong>Role:</strong> Team Lead</p>
@@ -617,9 +640,10 @@
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
-                                
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Vue.js</span>
+
                             </div>
                         </div>
                     </div>
@@ -627,7 +651,7 @@
                     <!-- 8. E-commerce Website (Muktoshop) -->
                     <div class="project">
                         <img loading="lazy" src="images/projects/single-vendor-ecom.png" alt="E-commerce Website" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>E-commerce Website</h3>
                             <span>E-commerce Website</span>
                             <p><strong>Role:</strong> Team Lead</p>
@@ -636,71 +660,75 @@
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
-                                
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Vue.js</span>
+                                <span class="chip">Sslcommerz</span>
+                                <span class="chip">Bkash</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project">
                         <img loading="lazy" src="images/projects/parceldex.png" alt="Courier Website" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Courier Website</h3>
                             <span>Courier Website</span>
-                            <p><strong>Role:</strong> Team Lead</p>
+                            <p><strong>Role:</strong> Senior Software Engineer</p>
                             <div class="buttons">
                                 <a target="_blank" href="https://parceldex.com.bd/">Live Demo →</a>
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
-                                
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project">
                         <img loading="lazy" src="images/projects/pa1l.png" alt="Fundraising Website & App" />
-                        <div class="overlay">
-                            <h3>Fundraising Website & App</h3>
-                            <span>Fundraising Website & App</span>
+                        <div class="overlay2">
+                            <h3>Fundraising Website - NZ</h3>
+                            <span>Fundraising Website</span>
                             <p><strong>Role:</strong> Team Lead</p>
                             <div class="buttons">
                                 <a target="_blank" href="https://pa1l.online/">Live Demo →</a>
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
-                               
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Vue.js</span>
+                                <span class="chip">API</span>
+                                <span class="chip">Stripe</span>
+                                <span class="chip">Worldline NZ</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="project">
-                        <img loading="lazy" src="images/projects/badhan.png" alt="A blood donation website & mobile app" />
-                        <div class="overlay">
-                            <h3>A blood donation website & mobile app</h3>
-                            <span>A Voluntary Blood Donors' Organization</span>
+                        <img loading="lazy" src="images/projects/badhan.png" alt="A blood donation website" />
+                        <div class="overlay2">
+                            <h3>Badhan - A Blood Donation Website</h3>
+                            <span>Badhan - A Voluntary Blood Donors' Organization</span>
                             <p><strong>Role:</strong> Team Lead</p>
                             <div class="buttons">
                                 <a target="_blank" href="https://badhan.org/">Live Demo →</a>
                                 <a href="#">Source Code</a>
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Nuxt.js</span>
-                                <span class="chip">Webpack</span><span
-                                    class="chip">Yarn</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">Nuxt.js</span>
+                                <span class="chip">API</span>
                             </div>
                         </div>
                     </div>
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/feeder.png" alt="Feedback Management Platform" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Feedback Management Platform</h3>
                             <p><strong>Role:</strong> PHP Laravel Developer</p>
                             <div class="buttons">
@@ -720,7 +748,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/global.png" alt="Multi vendor E-commerce Website" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Multi vendor E-commerce Website</h3>
                             <p><strong>Role:</strong> Team Lead</p>
                             <div class="buttons">
@@ -737,7 +765,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/pos.png" alt="Point of Sale" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Point of Sale</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -757,7 +785,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/hrm.png" alt="HRM Software" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>HRM Software</h3>
                             <p><strong>Role:</strong> Full-stack Developer, Team Lead</p>
                             <div class="buttons">
@@ -777,7 +805,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/salon-booking.png" alt="Salon Booking system" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Salon Booking system</h3>
                             <p><strong>Role:</strong> Full-stack Developer, Team Lead</p>
                             <div class="buttons">
@@ -797,7 +825,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/prep-excellence.png" alt="LMS (Learning Management System)" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>LMS (Learning Management System)</h3>
                             <p><strong>Role:</strong> Team Lead</p>
                             <div class="buttons">
@@ -817,7 +845,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/grocery.png" alt="Multi vendor E-commerce website and mobile app" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Multi vendor E-commerce website and mobile app</h3>
                             <p><strong>Role:</strong> Team Lead</p>
                             <div class="buttons">
@@ -836,7 +864,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/evp.png" alt="Electronic Visa Processing" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Electronic Visa Processing</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -856,7 +884,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/rental.png" alt="Rental Management System" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Rental Management System</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -876,7 +904,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/inventory.png" alt="Inventory Management System" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Inventory Management System</h3>
                             <p><strong>Role:</strong> Full-stack Developer, Project Manager</p>
                             <div class="buttons">
@@ -897,7 +925,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/forum.PNG" alt="Real Time Single Page Forum App" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>A real Time Single Page Forum App</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -916,7 +944,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/lubricant.png" alt="ERP of Supply Chain Management" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>ERP of Supply Chain Management</h3>
                             <p><strong>Role:</strong> PHP Laravel Developer</p>
                             <div class="buttons">
@@ -934,7 +962,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/green-hat-bazar.PNG" alt="E-commerce website (Green Hat Bazar)" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>E-commerce website</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -953,7 +981,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/vip-landmark.jpg" alt="Real state website" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Real state website</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -971,7 +999,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/agency.jpg" alt="Recruiting & visa processing agency website" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Recruiting & visa processing agency website</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -990,7 +1018,7 @@
 
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/jobs-portal.PNG" alt="Jobs portal website" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Jobs portal website</h3>
                             <p><strong>Role:</strong> Full-stack Developer</p>
                             <div class="buttons">
@@ -1011,7 +1039,16 @@
             </div>
         </section>
 
-        <section id="portfolio" class="portfolio-section" style="margin-top: 70px;">
+        <section>
+            <div class="service-banner" style="background-color: 1px 1px 3px rgba(80, 80, 80, .1) !important;">
+                <h2>Transform Your Ideas into Reality</h2>
+                <p>Whether it's application development, mobile app development, E-commerce, UX design, fixing bugs,
+                    devops support or getting expert tutoring, we're here to assist you.</p>
+                <a class="gradiant-btn" href="#services">Explore Services</a>
+            </div>
+        </section>
+
+        <section id="portfolio" class="portfolio-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
@@ -1024,11 +1061,11 @@
                 <div class="projects">
                     <div class="project">
                         <img loading="lazy" src="images/projects/badhan.webp" alt="priyotex" />
-                        <div class="overlay">
-                            <h3>Badhan Mobile App</h3>
-                            <span>A Voluntary Blood Donors' Organization.
+                        <div class="overlay2">
+                            <h3>Badhan - A Blood Donation App</h3>
+                            <span>Badhan - A Voluntary Blood Donors' Organization.
                             </span>
-                            <p><strong>Role:</strong>Senior Software Engineer</p>
+                            <p><strong>Role:</strong> Team Lead</p>
                             <div class="buttons">
                                 <!-- <a target="_blank" href="#">App Store</a> -->
                                 <a href="https://play.google.com/store/apps/details?id=com.badhan.blood.badhan">Play
@@ -1036,9 +1073,10 @@
                             </div>
 
                             <div class="chips">
+                                <span class="chip">PHP</span>
                                 <span class="chip">Laravel</span>
-                                <span class="chip">Queues</span>
-                                <span class="chip">Redis</span>
+                                <span class="chip">API</span>
+                                <span class="chip">Flutter</span>
                             </div>
                         </div>
                     </div>
@@ -1046,17 +1084,19 @@
                     <!-- 1. SAAS E-commerce Platform -->
                     <div class="project">
                         <img loading="lazy" src="images/projects/bus-ticket.webp" alt="SAAS E-commerce Platform" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Online Bus Ticket Booking App</h3>
                             <span>Online Bus Ticket Booking App</span>
-                            <p><strong>Role:</strong>Senior Software Engineer</p>
+                            <p><strong>Role:</strong> Senior Software Engineer</p>
                             <div class="buttons">
                                 <a target="_blank" href="#">Play Store →</a>
                                 <!-- <a href="#">Source Code</a> -->
                             </div>
                             <div class="chips">
-                                <span class="chip">PHP</span><span class="chip">Laravel</span><span
-                                    class="chip">Vue.js</span>
+                                <span class="chip">PHP</span>
+                                <span class="chip">Laravel</span>
+                                <span class="chip">API</span>
+                                <span class="chip">Flutter</span>
                             </div>
                         </div>
                     </div>
@@ -1064,7 +1104,7 @@
                     <!-- 2. Product Scrapping Project UK Based -->
                     <!-- <div class="project">
                         <img loading="lazy" src="images/projects/scrapping.png" alt="Product Scrapping Project UK Based" />
-                        <div class="overlay">
+                        <div class="overlay2">
                             <h3>Product Scrapping Project UK Based</h3>
                             <p><strong>Role:</strong> Senior Software Engineer</p>
                             <div class="buttons">
@@ -1601,15 +1641,6 @@
                 </div>
             </div>
 
-        </section> -->
-
-        <!-- <section>
-            <div class="service-banner" style="background-color: 1px 1px 3px rgba(80, 80, 80, .1) !important;">
-                <h2>Transform Your Ideas into Reality</h2>
-                <p>Whether it's application development, mobile app development, E-commerce, UX design, fixing bugs,
-                    devops support or getting expert tutoring, we're here to assist you.</p>
-                <a class="gradiant-btn" href="#services">Explore Services</a>
-            </div>
         </section> -->
 
         <section class="client-section">
