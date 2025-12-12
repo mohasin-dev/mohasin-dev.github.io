@@ -17582,7 +17582,7 @@ testimonial-content {
 .client-logos {
     display: flex;
     justify-content: center;
-    gap: 80px;
+    gap: 65px;
     flex-wrap: wrap;
 }
 
